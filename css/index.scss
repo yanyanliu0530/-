@@ -10,16 +10,106 @@ img{
 span{
     display: block;
 }
-// 广告图
+$font12:12px;
+//中心版区
+.advMain,.navMian{
+    width: 1202px;
+    margin: 0 auto;
+}
 .adv{
-    background: palegreen;
-    position: relative;
-    a{
-        cursor: pointer;
-        img{
-        width: 100%;
-        display: block;    
+    background: #c40000;
+    width: 100%;
+   
+    .advMain{
+        background: peru;
         height: 60px;
+        position: relative;
+        a{
+            img{
+                height: 60px;
+                width: 100%;
+            }
+        }
+        span{
+        width: 32px;
+        height: 32px;
+        position: absolute;
+        background-image: url(../images/a.png);
+        background-position: -456px -414px;
+        background-repeat:no-repeat; 
+        top: 50%;
+        margin-top:-16px; 
+        right: -30px;
     }
+    }
+   
+}
+// nav
+.nav{
+    background: #f4f4f4;
+    .navMian{
+        background: pink;
+        height: 28px;
+        .navL{
+            width: 150px;
+            color: #998c59;
+            line-height: 28px;
+            font-size: $font12;
+            text-indent: 12px;
+            float: left;
+        }
+        .navR{
+            background: yellow;
+            float: right;
+            .logReg{
+                float: left;
+                .login{
+                line-height: 28px;
+                font-size: $font12;
+                color: #a49999;
+                padding: 0 9px;
+                float: left;
+                }
+                .reg{
+                    float: left;
+                    padding: 0 9px;
+                    background: seagreen;
+                    font-size:$font12; 
+                    line-height: 28px;
+                }
+            }
+           .list{
+               float: left;
+               span{
+                   float: left;
+                   padding: 0 10px;
+                   background: salmon;
+                   font-size:12px;
+                   color: #999999;
+                   line-height: 28px; 
+               }
+               ul{
+                   float: left;
+                   background: darkorange;
+                   li{
+                       float: left;
+                       a{
+                        padding: 0 10px;
+                        background: darkcyan;
+                        color: #999999;
+                        font-size: 12px;
+                        line-height: 28px;
+                       }
+                   }
+               }
+               .English{
+                   float: left;
+                   color: #999999;
+                   font-size: 12px;
+                   line-height: 28px;
+                   padding: 0 10px;
+               }
+           }
+        }
     }
 }

@@ -10,17 +10,116 @@ span {
   display: block;
 }
 
+.advMain, .navMian {
+  width: 1202px;
+  margin: 0 auto;
+}
+
 .adv {
-  background: palegreen;
+  background: #c40000;
+  width: 100%;
+}
+
+.adv .advMain {
+  background: peru;
+  height: 60px;
   position: relative;
 }
 
-.adv a {
-  cursor: pointer;
+.adv .advMain a img {
+  height: 60px;
+  width: 100%;
 }
 
-.adv a img {
-  width: 100%;
-  display: block;
-  height: 60px;
+.adv .advMain span {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  background-image: url(../images/a.png);
+  background-position: -456px -414px;
+  background-repeat: no-repeat;
+  top: 50%;
+  margin-top: -16px;
+  right: -30px;
+}
+
+.nav {
+  background: #f4f4f4;
+}
+
+.nav .navMian {
+  background: pink;
+  height: 28px;
+}
+
+.nav .navMian .navL {
+  width: 150px;
+  color: #998c59;
+  line-height: 28px;
+  font-size: 12px;
+  text-indent: 12px;
+  float: left;
+}
+
+.nav .navMian .navR {
+  background: yellow;
+  float: right;
+}
+
+.nav .navMian .navR .logReg {
+  float: left;
+}
+
+.nav .navMian .navR .logReg .login {
+  line-height: 28px;
+  font-size: 12px;
+  color: #a49999;
+  padding: 0 9px;
+  float: left;
+}
+
+.nav .navMian .navR .logReg .reg {
+  float: left;
+  padding: 0 9px;
+  background: seagreen;
+  font-size: 12px;
+  line-height: 28px;
+}
+
+.nav .navMian .navR .list {
+  float: left;
+}
+
+.nav .navMian .navR .list span {
+  float: left;
+  padding: 0 10px;
+  background: salmon;
+  font-size: 12px;
+  color: #999999;
+  line-height: 28px;
+}
+
+.nav .navMian .navR .list ul {
+  float: left;
+  background: darkorange;
+}
+
+.nav .navMian .navR .list ul li {
+  float: left;
+}
+
+.nav .navMian .navR .list ul li a {
+  padding: 0 10px;
+  background: darkcyan;
+  color: #999999;
+  font-size: 12px;
+  line-height: 28px;
+}
+
+.nav .navMian .navR .list .English {
+  float: left;
+  color: #999999;
+  font-size: 12px;
+  line-height: 28px;
+  padding: 0 10px;
 }
