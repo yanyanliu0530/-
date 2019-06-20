@@ -3,6 +3,7 @@
 //公共样式
 a{
     display: block;
+    cursor: pointer;
 }
 img{
     display: block;
@@ -12,7 +13,7 @@ span{
 }
 $font12:12px;
 //中心版区
-.advMain,.navMian{
+.advMain,.navMian,.headMain,.proMain{
     width: 1202px;
     margin: 0 auto;
 }
@@ -21,7 +22,6 @@ $font12:12px;
     width: 100%;
    
     .advMain{
-        background: peru;
         height: 60px;
         position: relative;
         a{
@@ -48,7 +48,6 @@ $font12:12px;
 .nav{
     background: #f4f4f4;
     .navMian{
-        background: pink;
         height: 28px;
         .navL{
             width: 150px;
@@ -59,7 +58,6 @@ $font12:12px;
             float: left;
         }
         .navR{
-            background: yellow;
             float: right;
             .logReg{
                 float: left;
@@ -69,13 +67,20 @@ $font12:12px;
                 color: #a49999;
                 padding: 0 9px;
                 float: left;
+                &:hover{
+                   text-decoration: underline;
+                    color: #333
+                }
                 }
                 .reg{
                     float: left;
                     padding: 0 9px;
-                    background: seagreen;
                     font-size:$font12; 
                     line-height: 28px;
+                    color: #ae0f17;
+                    &:hover{
+                        text-decoration: underline;
+                    }
                 }
             }
            .list{
@@ -83,33 +88,253 @@ $font12:12px;
                span{
                    float: left;
                    padding: 0 10px;
-                   background: salmon;
                    font-size:12px;
                    color: #999999;
                    line-height: 28px; 
                }
                ul{
                    float: left;
-                   background: darkorange;
                    li{
                        float: left;
                        a{
                         padding: 0 10px;
-                        background: darkcyan;
                         color: #999999;
                         font-size: 12px;
                         line-height: 28px;
+                        &:hover{
+                        text-decoration: underline;
+                        color: #333;
+                        }
                        }
                    }
                }
                .English{
+                   cursor: pointer;
                    float: left;
                    color: #999999;
                    font-size: 12px;
                    line-height: 28px;
                    padding: 0 10px;
+                   &:hover{
+                       text-decoration: underline;
+                       color: #333;
+                   }
                }
            }
+        }
+    }
+}
+// 搜索
+.head{
+    width: 100%;
+    .headMain{
+        height: 115px;
+        .headL{
+            float: left;
+            width: 404px;
+            height:75px;
+            padding-top: 18px;
+            h1{
+                width: 121px;
+                float: left;
+                height: 75px;
+                a{
+                 width: 121px;
+                 height: 75px;  
+                }
+            }
+            .logoR{
+                width: 175px;
+                height: 75px; 
+                float: left;
+                img{
+                    width: 100%;
+                    height: 100%;;
+                }
+            }
+        }
+        .find{
+            margin-top:38px;
+            height: 40px; 
+            width: 392px;
+            float: left;
+            .findL{
+                width: 314px;
+                height: 38px;
+                border: 1px solid #ddd;
+                float: left;
+                i{
+                    margin: 9px 6px 0 6px;
+                    float: left;
+                    display: block;
+                    width: 18px;
+                    height: 18px;
+                    background-image:url(../images/a.png);
+                    background-position:-379px -420px;  
+                }
+                input{
+                width:284px;
+                border: none;
+                height:100%;
+                outline: none;
+            }
+            }
+            .findR{
+                float: right;
+                width: 76px;
+                height: 40px;
+                background-image:linear-gradient(-270deg,#da6666 0,#b33636 100%) ;
+                color: #fff;
+                font-size: 14px;
+                text-align: center;
+                line-height: 40px;
+            }
+        }
+        .headR{
+            width: 179px;
+            height: 115px;
+            float: right;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .code{
+            width: 107px;
+            height: 115px;
+            float: right;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+// product
+.produ{
+    background: seagreen;
+    border-bottom: 1px solid #eeeeee;
+    .proMain{
+        height: 47px;
+        background: palevioletred;
+        .proL{
+            width: 202px;
+            float: left;
+            height: 47px;
+            position: relative;
+            .pro{
+                padding:0 16px; 
+                height: 47px;
+                background-image: linear-gradient(269deg,#b34747 1%,#cc5252 98%);
+                background-color: #b32424;
+                span{
+                    font-size: 12px;
+                    color: #fff;
+                    line-height: 47px;
+                    float: left;
+                }
+                i{
+                    display: block;
+                    background-image:url(../images/a.png); 
+                    background-position: -280px -325px;
+                    background-repeat:no-repeat; 
+                    width: 14px;
+                    height: 14px; 
+                    float: right;
+                    margin-top: 17px;
+                }
+            }
+            .menu{
+                width: 202px;
+                height: 460px;
+                background: palegreen; 
+                position: absolute;
+                top: 47px;
+                left: 0;
+                .menuF{
+                    width :202px;
+                    height: 57.5px;
+                    background: palevioletred;
+                    dl{
+                        width: 182px;
+                        margin: 0 auto;
+                        background: peru;
+                        height: 57.5px; 
+                        
+                        dt{
+                            height: 57.5px;
+                            float: left;
+                            a{
+                                color: #4d4d4d;
+                               
+                                font-size: 12px;
+                                background: purple;
+                                font-weight: 700;
+                                line-height: 57.5px;
+                                em{
+                                    font-size:12px; 
+                                }
+                            }
+                        }
+                    .menuL{
+                        max-width: 119px;
+                        height: 57.5px;
+                        background: papayawhip;
+                        float: left;
+                        a{
+                            float: left;
+                            margin-right:3px;
+                            color: #666;
+                            font-size: 12px;
+                            line-height:57.5px; 
+                            &:hover{
+                                color: #333;
+                                text-decoration: underline;
+                            }
+                        }
+                        a:nth-child(1){
+                            margin-left:3px;
+                        }
+                         a:nth-child(3){
+                            margin-right:0px;
+                        }
+                        
+                    } 
+                    .menuR{
+                        width:998px;
+                        height: 460px;
+                        background: powderblue;
+                        position: absolute;
+                        top: 0;
+                        left: 202px;
+                        display: none;
+                    }
+                    // .menuRdis{
+                    //     display: block;
+                    // } 
+                    }
+                }
+                }
+        }
+        .proC{
+            height:  47px;
+            float: left;
+            width: 632px;
+            margin-left: 33px;
+            li{
+                height:  47px;
+                float: left;
+                 padding:0 12px;
+                a{
+                    line-height: 40px;
+                    font-size: 14px;
+                    color: #333;
+                    text-align: center;  
+                    &:hover{
+                        border-bottom:3px solid #cc5252; 
+                    }
+                }
+            }
         }
     }
 }
