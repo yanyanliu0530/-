@@ -1,62 +1,546 @@
-[
-    {
-        "img": "images/shu1",
-        "txt": "但斯顿一"
+{
+    "class01": {
+        "name": "顶级品牌",
+        "list": [
+            {
+                "img": "images/shu1.jpg",
+                "txt": "但斯顿一"
+            },
+            {
+                "img": "images/shu2.jpg",
+                "txt": "劳力士"
+            },
+            {
+                "img": "images/shu3.jpg",
+                "txt": "马法拉第"
+            },
+            {
+                "img": "images/shu4.jpg",
+                "txt": "曼秀雷敦"
+            },
+            {
+                "img": "images/shu5.jpg",
+                "txt": "阿玛尼"
+            },
+            {
+                "img": "images/shu6.jpg",
+                "txt": "西亚电脑"
+            },
+            {
+                "img": "images/shu7.jpg",
+                "txt": "光环技能"
+            },
+            {
+                "img": "images/shu8.jpg",
+                "txt": "俄铝超标"
+            },
+            {
+                "img": "images/shu9.jpg",
+                "txt": "凤凰计划"
+            },
+            {
+                "img": "images/shu10.jpg",
+                "txt": "曼秀雷敦"
+            },
+            {
+                "img": "images/shu11.jpg",
+                "txt": "阿玛尼"
+            },
+            {
+                "img": "images/shu12.jpg",
+                "txt": "西亚电脑"
+            },
+            {
+                "img": "images/shu13.jpg",
+                "txt": "光环技能"
+            },
+            {
+                "img": "images/shu14.jpg",
+                "txt": "俄铝超标"
+            },
+            {
+                "img": "images/shu15.jpg",
+                "txt": "凤凰计划"
+            },
+            {
+                "img": "images/shu5.jpg",
+                "txt": "阿玛尼"
+            },
+            {
+                "img": "images/shu6.jpg",
+                "txt": "西亚电脑"
+            },
+            {
+                "img": "images/shu7.jpg",
+                "txt": "光环技能"
+            },
+            {
+                "img": "images/shu8.jpg",
+                "txt": "俄铝超标"
+            }
+        ],
+        "Img": "images/l1.jpg",
+        "ci": [
+            "五十噚",
+            "百达翡丽",
+            "复杂功能计时",
+            "陀飞轮",
+            "Master大师"
+        ]
     },
-    {
-        "img": "images/shu2",
-        "txt": "劳力士"
+    "class02": {
+        "name": "奢华品牌",
+        "list": [
+            {
+                "img": "images/shu4.jpg",
+                "txt": "曼秀雷敦"
+            },
+            {
+                "img": "images/shu1.jpg",
+                "txt": "阿玛尼"
+            },
+            {
+                "img": "images/shu12.jpg",
+                "txt": "西亚电脑"
+            },
+            {
+                "img": "images/shu3.jpg",
+                "txt": "光环技能"
+            },
+            {
+                "img": "images/shu15.jpg",
+                "txt": "俄铝超标"
+            },
+            {
+                "img": "images/shu13.jpg",
+                "txt": "凤凰计划"
+            },
+            {
+                "img": "images/shu10.jpg",
+                "txt": "曼秀雷敦"
+            },
+            {
+                "img": "images/shu3.jpg",
+                "txt": "光环技能"
+            },
+            {
+                "img": "images/shu15.jpg",
+                "txt": "俄铝超标"
+            },
+            {
+                "img": "images/shu13.jpg",
+                "txt": "凤凰计划"
+            }
+        ],
+        "Img": "images/l2.jpg",
+        "ci": [
+            "历史学家系列",
+            "蓝气球",
+            "碟飞",
+            "水鬼",
+            "珐琅"
+        ]
     },
-    {
-        "img": "images/shu3",
-        "txt": "马法拉第"
+    "class03": {
+        "name": "高级品牌",
+        "list": [
+            {
+                "img": "images/shu1.jpg",
+                "txt": "曼秀雷敦"
+            },
+            {
+                "img": "images/shu8.jpg",
+                "txt": "阿玛尼"
+            },
+            {
+                "img": "images/shu13.jpg",
+                "txt": "西亚电脑"
+            },
+            {
+                "img": "images/shu3.jpg",
+                "txt": "光环技能"
+            },
+            {
+                "img": "images/shu15.jpg",
+                "txt": "俄铝超标"
+            },
+            {
+                "img": "images/shu9.jpg",
+                "txt": "凤凰计划"
+            },
+            {
+                "img": "images/shu2.jpg",
+                "txt": "曼秀雷敦"
+            },
+            {
+                "img": "images/shu13.jpg",
+                "txt": "光环技能"
+            },
+            {
+                "img": "images/shu5.jpg",
+                "txt": "俄铝超标"
+            },
+            {
+                "img": "images/shu4.jpg",
+                "txt": "凤凰计划"
+            },
+            {
+                "img": "images/shu9.jpg",
+                "txt": "曼秀雷敦"
+            },
+            {
+                "img": "images/shu15.jpg",
+                "txt": "俄铝超标"
+            },
+            {
+                "img": "images/shu9.jpg",
+                "txt": "凤凰计划"
+            },
+            {
+                "img": "images/shu2.jpg",
+                "txt": "曼秀雷敦"
+            },
+            {
+                "img": "images/shu13.jpg",
+                "txt": "光环技能"
+            },
+            {
+                "img": "images/shu5.jpg",
+                "txt": "俄铝超标"
+            }
+        ],
+        "Img": "images/l3.jpg",
+        "ci": [
+            "名匠",
+            "星空表",
+            "依百克四驱",
+            "古董机芯"
+        ]
     },
-    {
-        "img": "images/shu4",
-        "txt": "曼秀雷敦"
+    "class04": {
+        "name": "倾世时尚",
+        "list": [
+            {
+                "img": "images/shu11.jpg",
+                "txt": "曼秀雷敦"
+            },
+            {
+                "img": "images/shu15.jpg",
+                "txt": "阿玛尼"
+            },
+            {
+                "img": "images/shu2.jpg",
+                "txt": "西亚电脑"
+            },
+            {
+                "img": "images/shu13.jpg",
+                "txt": "光环技能"
+            },
+            {
+                "img": "images/shu5.jpg",
+                "txt": "俄铝超标"
+            },
+            {
+                "img": "images/shu7.jpg",
+                "txt": "凤凰计划"
+            },
+            {
+                "img": "images/shu4.jpg",
+                "txt": "曼秀雷敦"
+            },
+            {
+                "img": "images/shu8.jpg",
+                "txt": "光环技能"
+            },
+            {
+                "img": "images/shu11.jpg",
+                "txt": "曼秀雷敦"
+            },
+            {
+                "img": "images/shu15.jpg",
+                "txt": "阿玛尼"
+            },
+            {
+                "img": "images/shu2.jpg",
+                "txt": "西亚电脑"
+            },
+            {
+                "img": "images/shu13.jpg",
+                "txt": "光环技能"
+            }
+        ],
+        "Img": "images/l5.jpg",
+        "ci": [
+            "力洛克",
+            "东方星",
+            "贝伦赛丽",
+            "法国赫柏林",
+            "怀表"
+        ]
     },
-    {
-        "img": "images/shu5",
-        "txt": "阿玛尼"
+    "class05": {
+        "name": "倾世时尚",
+        "list": [
+            {
+                "img": "images/shu1.jpg",
+                "txt": "曼秀雷敦"
+            },
+            {
+                "img": "images/shu4.jpg",
+                "txt": "环技能尼"
+            },
+            {
+                "img": "images/shu12.jpg",
+                "txt": "阿玛光"
+            },
+            {
+                "img": "images/shu6.jpg",
+                "txt": "光环技能"
+            },
+            {
+                "img": "images/shu3.jpg",
+                "txt": "光环技能"
+            },
+            {
+                "img": "images/shu9.jpg",
+                "txt": "西亚电脑"
+            },
+            {
+                "img": "images/shu15.jpg",
+                "txt": "凤凰计划"
+            },
+            {
+                "img": "images/shu11.jpg",
+                "txt": "曼秀雷敦"
+            },
+            {
+                "img": "images/shu6.jpg",
+                "txt": "光环技能"
+            },
+            {
+                "img": "images/shu3.jpg",
+                "txt": "光环技能"
+            },
+            {
+                "img": "images/shu9.jpg",
+                "txt": "西亚电脑"
+            },
+            {
+                "img": "images/shu15.jpg",
+                "txt": "凤凰计划"
+            }
+        ],
+        "Img": "images/l5.jpg",
+        "ci": [
+            "五十噚",
+            "百达翡丽",
+            "复杂功能计时"
+        ]
     },
-    {
-        "img": "images/shu6",
-        "txt": "西亚电脑"
+    "class06": {
+        "name": "国产智能",
+        "list": [
+            {
+                "img": "images/shu1.jpg",
+                "txt": "但斯顿一"
+            },
+            {
+                "img": "images/shu2.jpg",
+                "txt": "劳力士"
+            },
+            {
+                "img": "images/shu3.jpg",
+                "txt": "马法拉第"
+            },
+            {
+                "img": "images/shu4.jpg",
+                "txt": "曼秀雷敦"
+            },
+            {
+                "img": "images/shu5.jpg",
+                "txt": "阿玛尼"
+            },
+            {
+                "img": "images/shu6.jpg",
+                "txt": "西亚电脑"
+            },
+            {
+                "img": "images/shu7.jpg",
+                "txt": "光环技能"
+            },
+            {
+                "img": "images/shu8.jpg",
+                "txt": "俄铝超标"
+            },
+            {
+                "img": "images/shu9.jpg",
+                "txt": "凤凰计划"
+            },
+            {
+                "img": "images/shu10.jpg",
+                "txt": "曼秀雷敦"
+            },
+            {
+                "img": "images/shu11.jpg",
+                "txt": "阿玛尼"
+            },
+            {
+                "img": "images/shu12.jpg",
+                "txt": "西亚电脑"
+            },
+            {
+                "img": "images/shu13.jpg",
+                "txt": "光环技能"
+            },
+            {
+                "img": "images/shu14.jpg",
+                "txt": "俄铝超标"
+            },
+            {
+                "img": "images/shu15.jpg",
+                "txt": "凤凰计划"
+            }
+        ],
+        "Img": "images/l6.jpg",
+        "ci": [
+            "历史学家系列",
+            "蓝气球",
+            "碟飞",
+            "水鬼",
+            "珐琅"
+        ]
     },
-    {
-        "img": "images/shu7",
-        "txt": "光环技能"
+    "class07": {
+        "name": "代表",
+        "list": [
+            {
+                "img": "images/shu4.jpg",
+                "txt": "曼秀雷敦"
+            },
+            {
+                "img": "images/shu1.jpg",
+                "txt": "阿玛尼"
+            },
+            {
+                "img": "images/shu12.jpg",
+                "txt": "西亚电脑"
+            },
+            {
+                "img": "images/shu3.jpg",
+                "txt": "光环技能"
+            },
+            {
+                "img": "images/shu15.jpg",
+                "txt": "俄铝超标"
+            },
+            {
+                "img": "images/shu13.jpg",
+                "txt": "凤凰计划"
+            },
+            {
+                "img": "images/shu10.jpg",
+                "txt": "曼秀雷敦"
+            },
+            {
+                "img": "images/shu5.jpg",
+                "txt": "阿玛尼"
+            },
+            {
+                "img": "images/shu6.jpg",
+                "txt": "西亚电脑"
+            },
+            {
+                "img": "images/shu7.jpg",
+                "txt": "光环技能"
+            },
+            {
+                "img": "images/shu8.jpg",
+                "txt": "俄铝超标"
+            },
+            {
+                "img": "images/shu9.jpg",
+                "txt": "凤凰计划"
+            }
+        ],
+        "Img": "images/l7.jpg",
+        "ci": [
+            "力洛克",
+            "东方星",
+            "贝伦赛丽",
+            "法国赫柏林",
+            "怀表"
+        ]
     },
-    {
-        "img": "images/shu8",
-        "txt": "俄铝超标"
-    },
-    {
-        "img": "images/shu9",
-        "txt": "凤凰计划"
-    },
-    {
-        "img": "images/shu10",
-        "txt": "曼秀雷敦"
-    },
-    {
-        "img": "images/shu11",
-        "txt": "阿玛尼"
-    },
-    {
-        "img": "images/shu12",
-        "txt": "西亚电脑"
-    },
-    {
-        "img": "images/shu13",
-        "txt": "光环技能"
-    },
-    {
-        "img": "images/shu14",
-        "txt": "俄铝超标"
-    },
-    {
-        "img": "images/shu15",
-        "txt": "凤凰计划"
+    "class08": {
+        "name": "维修保用",
+        "list": [
+            {
+                "img": "images/shu1.jpg",
+                "txt": "曼秀雷敦"
+            },
+            {
+                "img": "images/shu8.jpg",
+                "txt": "阿玛尼"
+            },
+            {
+                "img": "images/shu13.jpg",
+                "txt": "西亚电脑"
+            },
+            {
+                "img": "images/shu3.jpg",
+                "txt": "光环技能"
+            },
+            {
+                "img": "images/shu15.jpg",
+                "txt": "俄铝超标"
+            },
+            {
+                "img": "images/shu9.jpg",
+                "txt": "凤凰计划"
+            },
+            {
+                "img": "images/shu2.jpg",
+                "txt": "曼秀雷敦"
+            },
+            {
+                "img": "images/shu13.jpg",
+                "txt": "光环技能"
+            },
+            {
+                "img": "images/shu5.jpg",
+                "txt": "俄铝超标"
+            },
+            {
+                "img": "images/shu4.jpg",
+                "txt": "凤凰计划"
+            },
+            {
+                "img": "images/shu9.jpg",
+                "txt": "曼秀雷敦"
+            },
+            {
+                "img": "images/shu3.jpg",
+                "txt": "光环技能"
+            },
+            {
+                "img": "images/shu15.jpg",
+                "txt": "俄铝超标"
+            },
+            {
+                "img": "images/shu9.jpg",
+                "txt": "凤凰计划"
+            },
+            {
+                "img": "images/shu2.jpg",
+                "txt": "曼秀雷敦"
+            }
+        ],
+        "Img": "images/l8.jpg",
+        "ci": [
+            "名匠",
+            "星空表",
+            "依百克四驱",
+            "古董机芯"
+        ]
     }
-]
+}
