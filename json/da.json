@@ -1,0 +1,64 @@
+{
+    "01": {
+        "name": [
+            "本月爆款",
+            "正装表",
+            "时尚表",
+            "运动智能"
+        ],
+        "list": [
+            {
+                "img": "images/dar1.jpg",
+                "txt": "拉丁血统CYS古董手绘火焰纹",
+                "text": "英国首相丘吉尔钟情品牌",
+                "img1": "images/daren1.jpg",
+                "txt1": "日本进口",
+                "img2": "images/daren2.jpg",
+                "txt2": "动物图案",
+                "img3": "images/daren3.jpg",
+                "txt3": "巴黎眼",
+                "img4": "images/daren3.jpg",
+                "txt4": "巴黎眼"
+            },
+            {
+                "img": "images/daa1.jpg",
+                "txt": "德国拓天马Tutima 中国独家首发",
+                "text": "限量赠送表带+棒球帽",
+                "img1": "images/daa2.jpg",
+                "txt1": "森非",
+                "img2": "images/daa3.jpg",
+                "txt2": "珍珠",
+                "img3": "images/daa4.jpg",
+                "txt3": "帆船",
+                "img4": "images/daa5.jpg",
+                "txt4": "销量冠军"
+            },
+            {
+                "img": "images/daa10.jpg",
+                "txt": "特诺斯 500米专业深潜版 深海蓝",
+                "text": "驰骋由我 纵情撒野",
+                "img1": "images/daa6.jpg",
+                "txt1": "森非",
+                "img2": "images/daa7.jpg",
+                "txt2": "珍珠",
+                "img3": "images/daa8.jpg",
+                "txt3": "帆船",
+                "img4": "images/daa9.jpg",
+                "txt4": "销量冠军"
+            },
+            {
+                "img": "images/daa15.jpg",
+                "txt": "特诺斯 500米专业深潜版 深海蓝",
+                "text": "驰骋由我 纵情撒野",
+                "img1": "images/daa11.jpg",
+                "txt1": "森非",
+                "img2": "images/daa12.jpg",
+                "txt2": "珍珠",
+                "img3": "images/daa13.jpg",
+                "txt3": "帆船",
+                "img4": "images/daa14.jpg",
+                "txt4": "销量冠军"
+            }
+        ]
+    }
+}

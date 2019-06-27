@@ -1,0 +1,179 @@
+{
+    "famous": {
+        "shehua": {
+            "name": "奢华",
+            "list": [
+                "images/fam1.jpg",
+                "images/fam11.jpg",
+                "images/fam1111.jpg",
+                "images/fam11111.jpg"
+            ],
+            "dist": [
+                {
+                    "img": "images/p1.jpg",
+                    "txt": "天梭"
+                },
+                {
+                    "img": "images/p2.jpg",
+                    "txt": "赫柏林"
+                },
+                {
+                    "img": "images/p3.jpg",
+                    "txt": "美度"
+                },
+                {
+                    "img": "images/p4.jpg",
+                    "txt": "迪沃斯"
+                },
+                {
+                    "img": "images/p5.jpg",
+                    "txt": "西铁城"
+                },
+                {
+                    "img": "images/p6.jpg",
+                    "txt": "东方双狮"
+                }
+            ]
+        },
+        "gaoji": {
+            "name": "高级",
+            "list": [
+                "images/fam2.jpg",
+                "images/fam2a.jpg",
+                "images/fam2aa.jpg",
+                "images/fam2aaa.jpg"
+            ],
+            "dist": [
+                {
+                    "img": "images/p3.jpg",
+                    "txt": "天梭"
+                },
+                {
+                    "img": "images/p5.jpg",
+                    "txt": "赫柏林"
+                },
+                {
+                    "img": "images/p1.jpg",
+                    "txt": "美度"
+                },
+                {
+                    "img": "images/p6.jpg",
+                    "txt": "迪沃斯"
+                },
+                {
+                    "img": "images/p3.jpg",
+                    "txt": "西铁城"
+                },
+                {
+                    "img": "images/p2.jpg",
+                    "txt": "东方双狮"
+                }
+            ]
+        },
+        "jingji": {
+            "name": "顶级",
+            "list": [
+                "images/fam1.jpg",
+                "images/fam11.jpg",
+                "images/fam1111.jpg",
+                "images/fam11111.jpg"
+            ],
+            "dist": [
+                {
+                    "img": "images/p1.jpg",
+                    "txt": "天梭"
+                },
+                {
+                    "img": "images/p4.jpg",
+                    "txt": "赫柏林"
+                },
+                {
+                    "img": "images/p6.jpg",
+                    "txt": "美度"
+                },
+                {
+                    "img": "images/p3.jpg",
+                    "txt": "迪沃斯"
+                },
+                {
+                    "img": "images/p5.jpg",
+                    "txt": "西铁城"
+                },
+                {
+                    "img": "images/p2.jpg",
+                    "txt": "东方双狮"
+                }
+            ]
+        },
+        "qingshe": {
+            "name": "轻奢",
+            "list": [
+                "images/fam2.jpg",
+                "images/fam2a.jpg",
+                "images/fam2aa.jpg",
+                "images/fam2aaa.jpg"
+            ],
+            "dist": [
+                {
+                    "img": "images/p3.jpg",
+                    "txt": "天梭"
+                },
+                {
+                    "img": "images/p2.jpg",
+                    "txt": "赫柏林"
+                },
+                {
+                    "img": "images/p6.jpg",
+                    "txt": "美度"
+                },
+                {
+                    "img": "images/p2.jpg",
+                    "txt": "迪沃斯"
+                },
+                {
+                    "img": "images/p4.jpg",
+                    "txt": "西铁城"
+                },
+                {
+                    "img": "images/p1.jpg",
+                    "txt": "东方双狮"
+                }
+            ]
+        },
+        "shishang": {
+            "name": "时尚",
+            "list": [
+                "images/fam1.jpg",
+                "images/fam11.jpg",
+                "images/fam1111.jpg",
+                "images/fam11111.jpg"
+            ],
+            "dist": [
+                {
+                    "img": "images/p6.jpg",
+                    "txt": "天梭"
+                },
+                {
+                    "img": "images/p3.jpg",
+                    "txt": "赫柏林"
+                },
+                {
+                    "img": "images/p2.jpg",
+                    "txt": "美度"
+                },
+                {
+                    "img": "images/p4.jpg",
+                    "txt": "迪沃斯"
+                },
+                {
+                    "img": "images/p1.jpg",
+                    "txt": "西铁城"
+                },
+                {
+                    "img": "images/p3.jpg",
+                    "txt": "东方双狮"
+                }
+            ]
+        }
+    }
+}

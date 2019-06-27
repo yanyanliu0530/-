@@ -5,6 +5,7 @@ function Menu() {
     this.Ul = document.querySelectorAll('.menu_2 ul');
     this.menuImg = document.querySelectorAll('.menuImg');
     this.btn = document.querySelectorAll('.btn');
+
     this.init()
 }
 Menu.prototype = {

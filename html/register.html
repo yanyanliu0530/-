@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/public.css">
+    <title>Document</title>
+    <style>
+        body {
+            background: #fafafa !important;
+        }
+
+        img {
+            display: block;
+        }
+
+        input {
+            outline: none;
+        }
+
+        a {
+            display: block;
+        }
+
+        .reg {
+            width: 990px;
+            height: 757px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            height: 67px;
+            padding: 52px 0 0 0;
+        }
+
+        .logo>a {
+            height: 67px;
+            float: left;
+        }
+
+        .logo>a>img {
+            width: 100%;
+        }
+
+        .logo1 {
+            height: 67px;
+            float: left;
+        }
+
+        .logo1>img {
+            width: 100%;
+        }
+
+        .reg .zhuce {
+            border: 1px solid #f0f0f0;
+            background: #fff;
+            min-height: 260px;
+            margin: 10px auto 0;
+        }
+
+        .zhuce .box {
+            padding: 42px 0;
+        }
+
+        .zhuce .box>p {
+            font-weight: 400;
+            font-size: 28px;
+            color: #000;
+            text-align: center;
+            line-height: 28px;
+        }
+
+        .boxZ {
+            width: 339px;
+            margin: 0 auto;
+            height: 427px;
+        }
+
+        .box1 {
+            width: 338px;
+        }
+
+        .zhuce .box .index {
+            margin-bottom: 58px;
+        }
+
+        .zhuce .box .boxZ .box1 p {
+            width: 336px;
+            height: 38px;
+            border: 1px solid #f0f0f0;
+            position: relative;
+        }
+
+        .zhuce .box .boxZ .box1 p i {
+            display: block;
+            width: 12px;
+            height: 16px;
+            background-image: url('../images/a (1).png');
+            background-position: -576px -25px;
+            position: absolute;
+            top: 12px;
+            left: 11px;
+        }
+
+        .zhuce .box .boxZ .box1 p input {
+            width: 301px;
+            height: 38px;
+            line-height: 38px;
+            border: 1px solid #e8e8e8;
+            font-size: 12px;
+            background-color: transparent;
+            padding-left: 35px;
+
+        }
+
+        .txt1 {
+            line-height: 16px;
+            font-size: 10px;
+            color: #d00000;
+            margin-top: 8px;
+            display: block;
+            margin-bottom: -7px;
+            font-weight: 700;
+            background: url(../images/icon.png) no-repeat left center;
+            padding-left: 18px;
+            font-style: normal;
+        }
+
+        .box2 p {
+            margin-top: 15px;
+            line-height: 38px;
+            position: relative;
+            overflow: hidden;
+            /* height: 40px; */
+
+        }
+
+        .box2 p i {
+            width: 13px;
+            height: 15px;
+            display: block;
+            background-image: url('../images/a (1).png');
+            background-position: -576px 0;
+            position: absolute;
+            top: 12px;
+            left: 11px;
+        }
+
+        .box2 p input {
+            height: 38px;
+            line-height: 38px;
+            border: 1px solid #e8e8e8;
+            font-size: 12px;
+            background-color: transparent;
+            padding-left: 35px;
+            float: left;
+        }
+
+        .box2 p span {
+            width: 98px;
+            cursor: pointer;
+            height: 38px;
+            float: right;
+            text-align: center;
+            line-height: 38px;
+            color: #333;
+
+        }
+
+        .mima {
+            margin-top: 15px;
+        }
+
+        .zhuce .box .boxZ .box1 .mima i {
+            background-image: url('../images/a (1).png');
+            background-position: -576px -51px;
+        }
+
+        .bnt {
+            width: 340px;
+            height: 38px;
+            font-size: 14px;
+            background: #b32424;
+            color: #fff;
+            border: 0;
+            border-radius: 2px;
+            display: block;
+            margin: 35px auto 0;
+            line-height: 38px;
+            text-align: center;
+        }
+
+        #read {
+            margin-top: 15px;
+            line-height: 38px;
+            position: relative;
+            overflow: hidden;
+            font-size: 12px;
+            color: #999;
+            padding-bottom: 20px;
+        }
+
+        #read a {
+            text-decoration: none;
+            color: #000;
+            line-height: 1.5;
+            cursor: pointer;
+            display: initial;
+        }
+
+        .txt1 {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="reg">
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../images/logo-icon.png" alt="">
+            </a>
+            <a href="../index.html" class="logo1">
+                <img src="../images/logo1.png" alt="">
+            </a>
+        </div>
+        <div class="zhuce">
+            <div class="box">
+                <p class="index">注册万表会员</p>
+                <div class="boxZ">
+                    <div class="box1">
+                        <p>
+                            <i></i>
+                            <input type="text" class="mobile" placeholder="请输入你的手机号">
+                        </p>
+                        <i class="txt1" id="txt1">请输入你的手机号</i>
+                    </div>
+
+                    <div class="box2">
+                        <p>
+                            <i></i>
+                            <input type="text" placeholder="请输入图形验证码">
+                            <span></span>
+                        </p>
+
+                    </div>
+                    <div class="box1">
+                        <p class="mima">
+                            <i></i>
+                            <input id="pwd" type="password" placeholder="请设置密码">
+                        </p>
+                        <i class="txt1 txt2">密码应为6-20位任意字符组合</i>
+                    </div>
+                    <div class="box1">
+                        <p class="mima">
+                            <i></i>
+                            <input type="password" id="pwdN" placeholder="请再次输入密码">
+                        </p>
+                        <i class="txt1 txtmi">两次密码不一致，请检查您的密码</i>
+                    </div>
+                    <button href="" class="bnt">立即注册</button>
+                    <p id="read">
+                        点击“立即注册”，即表示您同意并愿意遵守
+                        <a href="">万表网用户协议</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../js/lib/jq3.41.js"></script>
+<script src="../js/lib/ajax2.0.js"></script>
+<script src="../js/lib/myApi.js"></script>
+<script src="../js/lib/cookie.js"></script>
+<script src="../js/js/register.js"></script>
+
+</html>

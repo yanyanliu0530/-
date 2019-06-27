@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/public.css">
+    <title>Document</title>
+    <style>
+        img {
+            display: block;
+        }
+
+        input {
+            outline: none;
+        }
+
+        a {
+            display: block;
+        }
+
+        .reg {
+            width: 990px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            height: 67px;
+            padding: 52px 0 0 0;
+        }
+
+        .logo>a {
+            height: 67px;
+            float: left;
+        }
+
+        .logo>a>img {
+            width: 100%;
+        }
+
+        .logo1 {
+            height: 67px;
+            float: left;
+
+        }
+
+        .logo1>img {
+            width: 100%;
+        }
+
+        .login {
+            height: 580px;
+            background: url(../images/login.jpg)no-repeat;
+            position: relative;
+            width: 100%;
+            background-position: top center;
+        }
+
+        .main_L {
+            height: 460px;
+            width: 380px;
+            background: #fff;
+            position: absolute;
+            top: 50px;
+            left: 800px;
+        }
+
+        .main_L .loginTab {
+            overflow: hidden;
+            width: 269px;
+            margin: 0 auto;
+            padding: 40px 0 20px;
+        }
+
+        .main_L .loginTab .user {
+            color: #cc5252;
+            height: 26px;
+            line-height: 26px;
+            font-size: 20px;
+            float: left;
+            width: 134px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .main_L .loginTab em {
+            float: left;
+            background: #ddd;
+            height: 24px;
+            font-size: 0;
+            width: 1px;
+            margin-top: 1px;
+        }
+
+        .main_L .loginTab .code {
+            height: 26px;
+            line-height: 26px;
+            font-size: 20px;
+            color: grey;
+            float: left;
+            width: 134px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+
+
+        .user_login .phone {
+            width: 300px;
+            margin: 0 auto;
+        }
+
+        .mobile input {
+            width: 100%;
+            display: block;
+            box-sizing: border-box;
+            height: 44px;
+            margin-top: 12px;
+            line-height: 44px;
+            padding-left: 10px;
+        }
+
+        i {
+            font-size: 14px;
+            color: #cc5252;
+            line-height: 19px;
+            margin-top: 8px;
+            display: block;
+            padding-left: 10px;
+            font-style: normal;
+        }
+
+        .codeImg {
+            overflow: hidden;
+        }
+
+        .codeImg input {
+            width: 200px;
+            margin-right: 4px;
+            display: block;
+            box-sizing: border-box;
+            height: 44px;
+            margin-top: 12px;
+            line-height: 44px;
+            border: 1px solid #ddd;
+            padding-left: 10px;
+            float: left;
+        }
+
+        .codeImg span {
+            display: block;
+            width: 94px;
+            height: 42px;
+            float: left;
+            border: 1px solid #ddd;
+            margin-top: 12px;
+
+        }
+
+        .bnt {
+            background: #cc5252;
+            text-align: center;
+            font-size: 18px;
+            color: #fff;
+            margin-bottom: 12px;
+            border: none;
+            padding: 0;
+            cursor: pointer;
+            width: 100%;
+            display: block;
+            box-sizing: border-box;
+            height: 44px;
+            margin-top: 12px;
+            line-height: 44px;
+        }
+
+        .zhuce a {
+            color: #999;
+            font-size: 14px;
+        }
+
+        i {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="reg">
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../images/logo-icon.png" alt="">
+            </a>
+            <a href="../index.html" class="logo1">
+                <img src="../images/logo1.png" alt="">
+            </a>
+        </div>
+    </div>
+    <div class="login">
+        <div class="main_L">
+            <p class="loginTab">
+                <span class="user">会员登录</span>
+                <em></em>
+                <span class="code">扫码登录</span>
+            </p>
+            <div class="user_login">
+                <div class="phone">
+                    <p class="mobile">
+                        <input type="text" class="username" placeholder="手机号码/会员名/邮箱">
+                        <i class="txt1">请输入正确格式</i>
+                    </p>
+
+                    <!-- <p class="codeImg">
+                        <input type="text" name="" id="" placeholder="验证码">
+                        <span></span>
+                        <i>验证码错误</i>
+                    </p> -->
+                    <p class="mobile">
+                        <input type="password" class="pwd" placeholder="密码">
+                        <i class="txt2">请输入正确密码</i>
+                    </p>
+
+                    <button class="bnt">立即登录</button>
+                    <p class="zhuce">
+                        <a href="register.html">免费注册</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../js/lib/jq3.41.js"></script>
+<script src="../js/lib/ajax2.0.js"></script>
+<script src="../js/lib/cookie.js"></script>
+
+</html>
+<script src="../js/js/login.js"></script>

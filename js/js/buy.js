@@ -6,8 +6,10 @@ function Buy() {
     this.timer = null;
     this.buyA = document.querySelector('.buy .buyMain .buyB .right_B a')
     this.spanR = document.querySelectorAll(' .buyB .right_B span')
-    this.num = 0;
+    this.Div = document.querySelector('.buy .buyMain .buyB .right_B')
 
+    this.num = 0;
+    this.timeImg = null;
     this.init()
 }
 Buy.prototype = {
@@ -15,7 +17,9 @@ Buy.prototype = {
         this.set();
         this.data();
         this.Ospan();
-        this.auto()
+        this.auto();
+
+        // this.clickImg()
     },
     // 定时器
     set: function () {
@@ -53,8 +57,8 @@ Buy.prototype = {
                 var str = '';
                 for (var i = 0, k = data[key].list.length; i < k; i++) {
                     str += `
-                        <li>
-                            <a href="##" title="${data[key].list[i].txt}">
+                        <li class= "${key}">
+                            <a href="html/list.html?name=${key}&pid=${i}" title="${data[key].list[i].txt}">
                                 <img src="${data[key].list[i].img}" alt="">
                                 <div class="P_txt">
                                     <p class="txt_1">${data[key].list[i].txt}</p>
@@ -85,7 +89,8 @@ Buy.prototype = {
 
         this.imgAll = document.querySelectorAll('.buyB .right_B a img')
         this.imgSize = this.imgAll.length;
-        this.dotUl = document.querySelector('.right_B ul')
+        this.dotUl = document.querySelector('.right_B ul');
+
 
         var str2 = '';
         for (var i = 0, k = this.imgSize; i < k; i++) {
@@ -95,13 +100,18 @@ Buy.prototype = {
         }
         this.dotUl.innerHTML = str2;
         this.dotLi = document.querySelectorAll('.right_B ul li')
-
+        this.imgdot = document.querySelectorAll('.right_B a img')
         for (var i = 0, k = this.dotLi.length; i < k; i++) {
             if (i == 0) {
                 this.dotLi[i].className = 'act';
             }
         }
+        this.imgdot[0].style.opacity = 1;
 
+        this.clickImg();
+        this.playImg()
+        this.stopImg()
+        this.dot()
 
         this.Ul.innerHTML = str;
         this.liAll = document.querySelectorAll(' .playSide #ulAll li')
@@ -163,26 +173,91 @@ Buy.prototype = {
     auto: function () {
         this.timer = setInterval(function () {
             this.next()
-        }.bind(this), 3000);
+        }.bind(this), 6000);
     },
 
-    //右侧淡入淡出
-    click: function () {
-        this.buyA.addEventListner('click')
-    },
-    //控制下标
-    // tag: function (e) {
-    //     e = e || event;
-    //     var target = e.target || e.srcElement;
-    //     if (target.tagName == 'SPAN' && target.className == 'r_span1') {
-    //         this.nextImg()
-    //     }
-    // },
-    //下张rig
-    nextImg: function () {
+    //运动
+    moveImg: function (img) {
+        for (var i = 0, k = this.imgdot.length; i < k; i++) {
+            this.imgdot[i].style.opacity = 0;
+        }
+        move(img, { 'opacity': 100 });
 
     },
-    //
+    //下张
+    nexImg: function () {
+        if (this.num >= this.imgdot.length - 1) {
+            this.num = 0;
+        } else {
+            this.num++;
+        }
+
+        this.clear()
+        this.dotLi[this.num].className = 'act'
+        this.moveImg(this.imgdot[this.num]);
+
+    },
+    //上张
+    proImg: function () {
+        if (this.num <= 0) {
+            this.num = this.imgdot.length - 1;
+
+        } else {
+            this.num--;
+        }
+        this.clear()
+        this.dotLi[this.num].className = 'act'
+        this.moveImg(this.imgdot[this.num]);
+    },
+    //点击
+    clickImg: function () {
+        var _this = this;
+        for (let i = 0, k = this.spanR.length; i < k; i++) {
+            this.spanR[i].onclick = function () {
+                if (i == 1) {
+                    _this.nexImg()
+                }
+                if (i == 0) {
+                    _this.proImg()
+                }
+            }
+
+        }
+    },
+    //自动
+    playImg: function () {
+        this.timeImg = setInterval(function () {
+            this.nexImg()
+        }.bind(this), 6000)
+    },
+    //划入
+    stopImg: function () {
+        this.Div.onmouseover = function () {
+            clearInterval(this.timeImg)
+        }.bind(this);
+        this.Div.onmouseout = function () {
+            this.playImg()
+        }.bind(this);
+    },
+    //控制圆点
+    dot: function () {
+        var _this = this;
+        for (let i = 0, k = this.dotLi.length; i < k; i++) {
+            this.dotLi[i].onmouseover = function () {
+                _this.clear()
+                this.className = 'act';
+                _this.num = i;
+                _this.moveImg(_this.imgdot[_this.num])
+            }
+        }
+
+    },
+    //清楚元点
+    clear: function () {
+        for (let i = 0, k = this.dotLi.length; i < k; i++) {
+            this.dotLi[i].className = ''
+        }
+    }
 
 
 

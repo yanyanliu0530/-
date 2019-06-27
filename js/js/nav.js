@@ -8,7 +8,8 @@ function Index() {
     this.liList = document.querySelector('.liList')
     // 搜索
     this.Input = document.querySelector('.Input')
-    this.findIn = document.querySelector('.findL input')
+    this.findIn = document.querySelector('.findL input');
+    this.login = document.querySelector('.logReg .login');
     this.init()
 }
 Index.prototype = {
@@ -17,7 +18,8 @@ Index.prototype = {
         this.over()
         this.out()
         this.find()
-        this.blur()
+        this.blur();
+        this.cook()
     },
     // adv
     click: function () {
@@ -54,6 +56,15 @@ Index.prototype = {
     },
     blurNo: function () {
         this.Input.style.display = 'none'
+    },
+
+
+    // 登陆显示
+    cook: function () {
+        var get = getcookie('name')
+        if (get) {
+            this.login.innerHTML = '你好！' + get;
+        }
     }
 
 

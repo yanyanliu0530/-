@@ -1,0 +1,347 @@
+a {
+  display: block;
+  cursor: pointer;
+}
+
+img {
+  display: block;
+}
+
+span {
+  display: block;
+}
+
+body {
+  font-size: 12px;
+}
+
+.advMain, .navMian, .headMain, .imgMain, .listMain, .infoMain, .distMain {
+  width: 1202px;
+  margin: 0 auto;
+}
+
+.adv {
+  background: #c40000;
+  width: 100%;
+}
+
+.adv .advMain {
+  position: relative;
+}
+
+.adv .advMain a img {
+  height: 60px;
+  width: 100%;
+  transition: 0.5s;
+}
+
+.adv .advMain span {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  background-image: url(../images/a.png);
+  background-position: -456px -414px;
+  background-repeat: no-repeat;
+  top: 50%;
+  margin-top: -16px;
+  right: -30px;
+}
+
+.nav {
+  background: #f4f4f4;
+}
+
+.nav .navMian {
+  height: 28px;
+}
+
+.nav .navMian .navL {
+  width: 150px;
+  color: #998c59;
+  line-height: 28px;
+  font-size: 12px;
+  text-indent: 12px;
+  float: left;
+}
+
+.nav .navMian .navR {
+  float: right;
+}
+
+.nav .navMian .navR .logReg {
+  float: left;
+}
+
+.nav .navMian .navR .logReg .login {
+  line-height: 28px;
+  font-size: 12px;
+  color: #a49999;
+  padding: 0 9px;
+  float: left;
+}
+
+.nav .navMian .navR .logReg .login:hover {
+  text-decoration: underline;
+  color: #333;
+}
+
+.nav .navMian .navR .logReg .reg {
+  float: left;
+  padding: 0 9px;
+  font-size: 12px;
+  line-height: 28px;
+  color: #ae0f17;
+}
+
+.nav .navMian .navR .logReg .reg:hover {
+  text-decoration: underline;
+}
+
+.nav .navMian .navR .list {
+  float: left;
+}
+
+.nav .navMian .navR .list span {
+  float: left;
+  padding: 0 10px;
+  font-size: 12px;
+  color: #999999;
+  line-height: 28px;
+}
+
+.nav .navMian .navR .list ul {
+  float: left;
+}
+
+.nav .navMian .navR .list ul li {
+  float: left;
+}
+
+.nav .navMian .navR .list ul li a {
+  padding: 0 10px;
+  color: #999999;
+  font-size: 12px;
+  line-height: 28px;
+}
+
+.nav .navMian .navR .list ul li a:hover {
+  text-decoration: underline;
+  color: #333;
+}
+
+.nav .navMian .navR .list ul .Li {
+  position: relative;
+}
+
+.nav .navMian .navR .list ul .Li .liA {
+  border-top: 1px solid #f4f4f4;
+  border-left: 1px solid #f4f4f4;
+  border-right: 1px solid #f4f4f4;
+  line-height: 26px;
+}
+
+.nav .navMian .navR .list ul .Li .liA:hover {
+  box-sizing: border-box;
+  background: #fff;
+}
+
+.nav .navMian .navR .list ul .Li .liList {
+  width: 202px;
+  height: 167px;
+  border: 1px solid #f4f4f4;
+  box-sizing: border-box;
+  position: absolute;
+  right: 0;
+  padding: 15px 8.5px;
+  display: none;
+  background: #fff;
+}
+
+.nav .navMian .navR .list ul .Li .liList ul {
+  width: 185px;
+  height: 78px;
+  margin: 0 auto;
+  border-bottom: 1px solid #f4f4f4;
+  margin-bottom: 12px;
+}
+
+.nav .navMian .navR .list ul .Li .liList ul li {
+  float: left;
+}
+
+.nav .navMian .navR .list ul .Li .liList ul li a {
+  padding: 5px 0;
+  width: 92.5px;
+  color: #666;
+  float: left;
+  text-align: center;
+  line-height: 26px;
+}
+
+.nav .navMian .navR .list ul .Li .liList p {
+  width: 185px;
+  margin: 0 auto;
+  line-height: 28px;
+  font-size: 12px;
+  color: #666;
+  text-align: center;
+  overflow: hidden;
+}
+
+.nav .navMian .navR .list .English {
+  cursor: pointer;
+  float: left;
+  color: #999999;
+  font-size: 12px;
+  line-height: 28px;
+  padding: 0 10px;
+}
+
+.nav .navMian .navR .list .English:hover {
+  text-decoration: underline;
+  color: #333;
+}
+
+.head {
+  width: 100%;
+}
+
+.head .headMain {
+  height: 115px;
+}
+
+.head .headMain .headL {
+  float: left;
+  width: 404px;
+  height: 75px;
+  padding-top: 18px;
+}
+
+.head .headMain .headL h1 {
+  width: 121px;
+  float: left;
+  height: 75px;
+}
+
+.head .headMain .headL h1 a {
+  width: 121px;
+  height: 75px;
+}
+
+.head .headMain .headL .logoR {
+  width: 175px;
+  height: 75px;
+  float: left;
+}
+
+.head .headMain .headL .logoR img {
+  width: 100%;
+  height: 100%;
+}
+
+.head .headMain .find {
+  margin-top: 38px;
+  height: 40px;
+  width: 392px;
+  float: left;
+}
+
+.head .headMain .find .findL {
+  width: 314px;
+  height: 38px;
+  border: 1px solid #ddd;
+  float: left;
+  position: relative;
+}
+
+.head .headMain .find .findL i {
+  margin: 9px 6px 0 6px;
+  float: left;
+  display: block;
+  width: 18px;
+  height: 18px;
+  background-image: url(../images/a.png);
+  background-position: -379px -420px;
+}
+
+.head .headMain .find .findL input {
+  width: 284px;
+  border: none;
+  height: 100%;
+  outline: none;
+}
+
+.head .headMain .find .findL .Input {
+  width: 314px;
+  height: 79px;
+  position: absolute;
+  top: 39px;
+  background: #fff;
+  display: none;
+  border-radius: 3px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15);
+}
+
+.head .headMain .find .findL .Input p {
+  line-height: 32px;
+  padding: 0 12px;
+  overflow: hidden;
+  color: #ccc;
+  font-size: 12px;
+}
+
+.head .headMain .find .findL .Input div {
+  padding-left: 12px;
+  height: 42px;
+}
+
+.head .headMain .find .findL .Input div a {
+  width: 46px;
+  height: 21px;
+  font-size: 12px;
+  color: #cc5252;
+  border: 1px solid #cc5252;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  padding: 6px 7px;
+  text-align: center;
+  line-height: 21px;
+}
+
+.head .headMain .find .findL .Input div a:hover {
+  background-color: #cc5252;
+  color: #fff;
+}
+
+.head .headMain .find .findR {
+  float: right;
+  width: 76px;
+  height: 40px;
+  background-image: linear-gradient(-270deg, #da6666 0, #b33636 100%);
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  line-height: 40px;
+}
+
+.head .headMain .headR {
+  width: 179px;
+  height: 115px;
+  float: right;
+}
+
+.head .headMain .headR img {
+  width: 100%;
+  height: 100%;
+}
+
+.head .headMain .code {
+  width: 107px;
+  height: 115px;
+  float: right;
+}
+
+.head .headMain .code img {
+  width: 100%;
+  height: 100%;
+}

@@ -10,7 +10,7 @@ function Banner() {
     this.Ul.style.width = this.allW + 'px';
     this.count = 0;
     this.timer = null;
-    this.main = document.querySelector('.banMain')
+    this.main = document.querySelector('.banner')
     this.obtn = document.querySelectorAll('.banMain span');
     this.dis = document.querySelector('.banMain .dis');
     this.init()
@@ -30,14 +30,13 @@ Banner.prototype = {
     //下一张
     nextImg: function () {
         if (this.count >= this.size - 2) {
-
             this.Ul.style.left = 0;
             this.count = 1;
         } else {
             this.count++
         }
         this.style();
-        this.disI[this.count = this.count >= this.disSize ? 0 : this.count].className = 'active'
+        this.disI[this.count = this.count >= this.disSize ? 0 : this.count].className = 'active';
         this.imgMove();
     },
     proImg: function () {
@@ -75,10 +74,10 @@ Banner.prototype = {
     },
     //鼠标划入 定时器停
     stop: function () {
-        this.main.onmouseover = function () {
+        this.main.onmouseenter = function () {
             clearInterval(this.timer)
         }.bind(this);
-        this.main.onmouseout = function () {
+        this.main.onmouseleave = function () {
             this.auto()
         }.bind(this)
     },
@@ -107,7 +106,6 @@ Banner.prototype = {
         var _this = this;
         for (let i = 0, k = this.disSize; i < k; i++) {
             this.disI[i].onmouseover = function () {
-                console.log(i)
                 _this.count = i;
                 _this.style();
                 this.className = 'active';

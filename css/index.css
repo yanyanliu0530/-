@@ -343,13 +343,8 @@ span {
   height: 100%;
 }
 
-.produ {
-  background: seagreen;
-}
-
 .produ .proMain {
   height: 47px;
-  background: palevioletred;
 }
 
 .produ .proMain .proL {
@@ -390,8 +385,8 @@ span {
   position: absolute;
   top: 47px;
   left: 0;
-  background: palegreen;
   z-index: 2;
+  background: rgba(255, 255, 255, 0.9);
 }
 
 .produ .proMain .proL .menu .menuF {
@@ -463,12 +458,11 @@ span {
   top: 0;
   left: 202px;
   display: none;
-  background: paleturquoise;
+  background: #fff;
 }
 
 .produ .proMain .proL .menu .menuF dl .menuR .menuC {
   width: 717px;
-  background: pink;
   margin: 23px 28px 0 24px;
   overflow: hidden;
   float: left;
@@ -477,7 +471,6 @@ span {
 .produ .proMain .proL .menu .menuF dl .menuR .menuC .menu_1 .menu_2 {
   width: 712px;
   max-height: 278px;
-  background: peru;
   position: relative;
   margin-bottom: 24px;
 }
@@ -486,7 +479,6 @@ span {
   width: 712px;
   overflow-y: scroll;
   max-height: 278px;
-  background: seagreen;
   overflow: auto;
 }
 
@@ -507,7 +499,6 @@ span {
   height: 40px;
   background-color: #fff;
   padding-top: 19px;
-  background: powderblue;
 }
 
 .produ .proMain .proL .menu .menuF dl .menuR .menuC .menu_1 .menu_2 ul li a .pImg img {
@@ -542,10 +533,6 @@ span {
   content: "";
   display: block;
   clear: both;
-}
-
-.produ .proMain .proL .menu .menuF dl .menuR .menuC .btn {
-  background: purple;
 }
 
 .produ .proMain .proL .menu .menuF dl .menuR .menuC .btn a {
@@ -590,7 +577,6 @@ span {
   width: 205px;
   height: 412px;
   margin-top: 23px;
-  background: peru;
 }
 
 .produ .proMain .proL .menu .menuF dl .menuR .menuImg img {
@@ -682,7 +668,6 @@ span {
 }
 
 .banner .banBox {
-  background: salmon;
   height: 460px;
   width: 1920px;
   position: absolute;
@@ -693,7 +678,6 @@ span {
 
 .banner .banBox ul {
   height: 460px;
-  background: pink;
   position: absolute;
 }
 
@@ -918,14 +902,12 @@ span {
 .buy .buyMain .buyB .play_B .playSide ul li {
   width: 190px;
   height: 280px;
-  background: orchid;
   float: left;
 }
 
 .buy .buyMain .buyB .play_B .playSide ul li a {
   width: 166px;
   height: 256px;
-  background: seagreen;
 }
 
 .buy .buyMain .buyB .play_B .playSide ul li a img {
@@ -935,7 +917,6 @@ span {
 }
 
 .buy .buyMain .buyB .play_B .playSide ul li a .P_txt {
-  background: palegreen;
   padding-top: 12px;
 }
 
@@ -950,7 +931,6 @@ span {
 
 .buy .buyMain .buyB .play_B .playSide ul li a .P_txt .txt_2 {
   height: 20px;
-  background: lawngreen;
   padding-left: 32px;
 }
 
@@ -1034,6 +1014,8 @@ span {
   position: absolute;
   top: 0;
   left: 0;
+  opacity: 0;
+  transition: 0.01s;
 }
 
 .buy .buyMain .buyB .right_B ul {
@@ -1054,6 +1036,7 @@ span {
   width: 8px;
   height: 8px;
   border-radius: 100%;
+  cursor: pointer;
 }
 
 .buy .buyMain .buyB .right_B ul .act {
@@ -1111,13 +1094,11 @@ span {
 }
 
 .person {
-  background: seagreen;
   padding-bottom: 32px;
 }
 
 .person .perMain {
   height: 420px;
-  background: plum;
 }
 
 .famous .fam {
@@ -1130,7 +1111,6 @@ span {
 
 .famous .fenye_F .top_F {
   overflow: hidden;
-  background: peru;
   margin-bottom: 12px;
 }
 
@@ -1142,7 +1122,6 @@ span {
 .famous .fenye_F .top_F .topL {
   width: 594px;
   height: 260px;
-  background: palevioletred;
   float: left;
   margin-right: 12px;
   overflow: hidden;
@@ -1184,7 +1163,6 @@ span {
 .famous .fenye_F .img_F {
   width: 100%;
   height: 95px;
-  background: salmon;
 }
 
 .famous .fenye_F .img_F li {
@@ -1229,7 +1207,6 @@ span {
 
 .txt_D {
   height: 60px;
-  background: peachpuff;
 }
 
 .txt_D h3 {
@@ -1244,7 +1221,6 @@ span {
 
 .txt_D .tab_D {
   width: 320px;
-  background: darkcyan;
   float: left;
   height: 60px;
 }
@@ -1263,15 +1239,21 @@ span {
   cursor: pointer;
 }
 
-.txt_D .tab_D li:hover {
+.txt_D .tab_D .daLi {
   background-color: #333;
   color: #f2d291;
 }
 
 .fenye_D {
   height: 360px;
-  background: palegreen;
   position: relative;
+}
+
+.fenye_D .fenyy {
+  height: 360px;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .fenye_D .fenyeA {
@@ -1283,19 +1265,19 @@ span {
   position: relative;
 }
 
+.fenye_D .fenyeA:hover img {
+  transform: scale(1.1);
+  transition: all 0.5s;
+}
+
 .fenye_D .fenyeA img {
   width: 392px;
   height: 360px;
-  transition: 0.5s;
-}
-
-.fenye_D .fenyeA img:hover {
-  transform: scale(1.1);
+  transition: all 0.5s;
 }
 
 .fenye_D .fenyeA .fenTxt {
   height: 50px;
-  background: sienna;
   position: absolute;
   width: 90%;
   left: 5%;
@@ -1349,14 +1331,16 @@ span {
   width: 392px;
   height: 360px;
   float: left;
-  background: darkmagenta;
   margin-right: 14px;
+}
+
+.fenye_D .fenCon a:hover {
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.15);
 }
 
 .fenye_D .fenCon .AA {
   width: 100%;
   height: 174px;
-  background: peru;
 }
 
 .fenye_D .fenCon .AA:hover {
@@ -1368,7 +1352,6 @@ span {
 }
 
 .fenye_D .fenR {
-  background: salmon;
   margin-right: 0;
 }
 
@@ -1398,7 +1381,6 @@ span {
 .fenye_D .fenR ul {
   width: 392px;
   height: 310px;
-  background: darkorange;
   padding: 25px 0 25px 0;
 }
 
@@ -1406,7 +1388,6 @@ span {
   width: 190px;
   height: 134px;
   float: left;
-  background: skyblue;
   margin-right: 12px;
   margin-bottom: 12px;
   position: relative;
@@ -1419,7 +1400,6 @@ span {
 .fenye_D .fenR ul li a {
   color: #666;
   cursor: pointer;
-  background: seagreen;
   width: 118px;
   height: 118px;
   margin: 8px auto;
@@ -1433,7 +1413,6 @@ span {
 
 .fenye_D .fenR ul li a div {
   height: 31px;
-  background: darkblue;
   position: absolute;
   width: 100%;
   left: 0;
@@ -1486,8 +1465,8 @@ span {
 .buy1 .buyB #ulwan #wanLi {
   width: 190px;
   height: 280px;
-  background: palegreen;
   margin-right: 12px;
+  float: left;
 }
 
 .buy1 .buyB #ulwan #wanLi:hover {
@@ -1519,7 +1498,6 @@ span {
   line-height: 40px;
   color: #999;
   border-top: 1px solid #eee;
-  background: sienna;
 }
 
 .buy1 .buyB #ulwan #wanLi #wanA div span {
@@ -1532,7 +1510,6 @@ span {
 .buy1 .buyB #ulwan #wanLi #wanA div span:nth-child(1) {
   width: 22px;
   height: 22px;
-  background: pink;
   float: left;
 }
 
