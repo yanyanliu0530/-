@@ -1,179 +1,237 @@
 {
-    "famous": {
-        "shehua": {
-            "name": "奢华",
-            "list": [
-                "images/fam1.jpg",
-                "images/fam11.jpg",
-                "images/fam1111.jpg",
-                "images/fam11111.jpg"
-            ],
-            "dist": [
-                {
-                    "img": "images/p1.jpg",
-                    "txt": "天梭"
-                },
-                {
-                    "img": "images/p2.jpg",
-                    "txt": "赫柏林"
-                },
-                {
-                    "img": "images/p3.jpg",
-                    "txt": "美度"
-                },
-                {
-                    "img": "images/p4.jpg",
-                    "txt": "迪沃斯"
-                },
-                {
-                    "img": "images/p5.jpg",
-                    "txt": "西铁城"
-                },
-                {
-                    "img": "images/p6.jpg",
-                    "txt": "东方双狮"
-                }
-            ]
-        },
-        "gaoji": {
-            "name": "高级",
-            "list": [
-                "images/fam2.jpg",
-                "images/fam2a.jpg",
-                "images/fam2aa.jpg",
-                "images/fam2aaa.jpg"
-            ],
-            "dist": [
-                {
-                    "img": "images/p3.jpg",
-                    "txt": "天梭"
-                },
-                {
-                    "img": "images/p5.jpg",
-                    "txt": "赫柏林"
-                },
-                {
-                    "img": "images/p1.jpg",
-                    "txt": "美度"
-                },
-                {
-                    "img": "images/p6.jpg",
-                    "txt": "迪沃斯"
-                },
-                {
-                    "img": "images/p3.jpg",
-                    "txt": "西铁城"
-                },
-                {
-                    "img": "images/p2.jpg",
-                    "txt": "东方双狮"
-                }
-            ]
-        },
-        "jingji": {
-            "name": "顶级",
-            "list": [
-                "images/fam1.jpg",
-                "images/fam11.jpg",
-                "images/fam1111.jpg",
-                "images/fam11111.jpg"
-            ],
-            "dist": [
-                {
-                    "img": "images/p1.jpg",
-                    "txt": "天梭"
-                },
-                {
-                    "img": "images/p4.jpg",
-                    "txt": "赫柏林"
-                },
-                {
-                    "img": "images/p6.jpg",
-                    "txt": "美度"
-                },
-                {
-                    "img": "images/p3.jpg",
-                    "txt": "迪沃斯"
-                },
-                {
-                    "img": "images/p5.jpg",
-                    "txt": "西铁城"
-                },
-                {
-                    "img": "images/p2.jpg",
-                    "txt": "东方双狮"
-                }
-            ]
-        },
-        "qingshe": {
-            "name": "轻奢",
-            "list": [
-                "images/fam2.jpg",
-                "images/fam2a.jpg",
-                "images/fam2aa.jpg",
-                "images/fam2aaa.jpg"
-            ],
-            "dist": [
-                {
-                    "img": "images/p3.jpg",
-                    "txt": "天梭"
-                },
-                {
-                    "img": "images/p2.jpg",
-                    "txt": "赫柏林"
-                },
-                {
-                    "img": "images/p6.jpg",
-                    "txt": "美度"
-                },
-                {
-                    "img": "images/p2.jpg",
-                    "txt": "迪沃斯"
-                },
-                {
-                    "img": "images/p4.jpg",
-                    "txt": "西铁城"
-                },
-                {
-                    "img": "images/p1.jpg",
-                    "txt": "东方双狮"
-                }
-            ]
-        },
-        "shishang": {
-            "name": "时尚",
-            "list": [
-                "images/fam1.jpg",
-                "images/fam11.jpg",
-                "images/fam1111.jpg",
-                "images/fam11111.jpg"
-            ],
-            "dist": [
-                {
-                    "img": "images/p6.jpg",
-                    "txt": "天梭"
-                },
-                {
-                    "img": "images/p3.jpg",
-                    "txt": "赫柏林"
-                },
-                {
-                    "img": "images/p2.jpg",
-                    "txt": "美度"
-                },
-                {
-                    "img": "images/p4.jpg",
-                    "txt": "迪沃斯"
-                },
-                {
-                    "img": "images/p1.jpg",
-                    "txt": "西铁城"
-                },
-                {
-                    "img": "images/p3.jpg",
-                    "txt": "东方双狮"
-                }
-            ]
-        }
+    "a07": {
+        "name": "奢华",
+        "list": [
+            {
+                "id": "48",
+                "img": "images/qaz.jpg"
+            },
+            {
+                "id": "49",
+                "img": "images/fam2.png"
+            },
+            {
+                "id": "50",
+                "img": "images/000.jpg"
+            },
+            {
+                "id": "51",
+                "img": "images/fam4.jpg"
+            }
+        ],
+        "list2": [
+            {
+                "txt": "劳力士",
+                "img": "images/fam111.jpg"
+            },
+            {
+                "txt": "万国",
+                "img": "images/fam222.jpg"
+            },
+            {
+                "txt": "库尔沃",
+                "img": "images/fam333.jpg"
+            },
+            {
+                "txt": "瓯子撇",
+                "img": "images/fam444.jpg"
+            },
+            {
+                "txt": "靠洛夫",
+                "img": "images/fam555.jpg"
+            },
+            {
+                "txt": "波高",
+                "img": "images/fam666.jpg"
+            }
+        ]
+    },
+    "a08": {
+        "name": "高级",
+        "list": [
+            {
+                "id": "52",
+                "img": "images/fam2.jpg"
+            },
+            {
+                "id": "53",
+                "img": "images/fam2a.jpg"
+            },
+            {
+                "id": "54",
+                "img": "images/fam2aa.jpg"
+            },
+            {
+                "id": "55",
+                "img": "images/fam2aaa.jpg"
+            }
+        ],
+        "list2": [
+            {
+                "txt": "万国",
+                "img": "images/fam222.jpg"
+            },
+            {
+                "txt": "劳力士",
+                "img": "images/fam111.jpg"
+            },
+            {
+                "txt": "靠洛夫",
+                "img": "images/fam555.jpg"
+            },
+            {
+                "txt": "瓯子撇",
+                "img": "images/fam444.jpg"
+            },
+            {
+                "txt": "库尔沃",
+                "img": "images/fam333.jpg"
+            },
+            {
+                "txt": "波高",
+                "img": "images/fam666.jpg"
+            }
+        ]
+    },
+    "a09": {
+        "name": "顶级",
+        "list": [
+            {
+                "id": "56",
+                "img": "images/qwe.jpg"
+            },
+            {
+                "id": "57",
+                "img": "images/qaz.jpg"
+            },
+            {
+                "id": "58",
+                "img": "images/wer.jpg"
+            },
+            {
+                "id": "59",
+                "img": "images/ssss.jpg"
+            }
+        ],
+        "list2": [
+            {
+                "txt": "劳力士",
+                "img": "images/fam111.jpg"
+            },
+            {
+                "txt": "万国",
+                "img": "images/fam222.jpg"
+            },
+            {
+                "txt": "库尔沃",
+                "img": "images/fam333.jpg"
+            },
+            {
+                "txt": "瓯子撇",
+                "img": "images/fam444.jpg"
+            },
+            {
+                "txt": "靠洛夫",
+                "img": "images/fam555.jpg"
+            },
+            {
+                "txt": "波高",
+                "img": "images/fam666.jpg"
+            }
+        ]
+    },
+    "a10": {
+        "name": "轻奢",
+        "list": [
+            {
+                "id": "60",
+                "img": "images/ssss.jpg"
+            },
+            {
+                "id": "61",
+                "img": "images/000.jpg"
+            },
+            {
+                "id": "62",
+                "img": "images/qwe.jpg"
+            },
+            {
+                "id": "63",
+                "img": "images/asq.jpg"
+            }
+        ],
+        "list2": [
+            {
+                "txt": "万国",
+                "img": "images/fam222.jpg"
+            },
+            {
+                "txt": "劳力士",
+                "img": "images/fam111.jpg"
+            },
+            {
+                "txt": "靠洛夫",
+                "img": "images/fam555.jpg"
+            },
+            {
+                "txt": "瓯子撇",
+                "img": "images/fam444.jpg"
+            },
+            {
+                "txt": "库尔沃",
+                "img": "images/fam333.jpg"
+            },
+            {
+                "txt": "波高",
+                "img": "images/fam666.jpg"
+            }
+        ]
+    },
+    "a11": {
+        "name": "时尚",
+        "list": [
+            {
+                "id": "64",
+                "img": "images/fam1.jpg"
+            },
+            {
+                "id": "49",
+                "img": "images/qaz.jpg"
+            },
+            {
+                "id": "50",
+                "img": "images/fam3.jpg"
+            },
+            {
+                "id": "51",
+                "img": "images/ssss.jpg"
+            }
+        ],
+        "list2": [
+            {
+                "txt": "劳力士",
+                "img": "images/fam111.jpg"
+            },
+            {
+                "txt": "万国",
+                "img": "images/fam222.jpg"
+            },
+            {
+                "txt": "库尔沃",
+                "img": "images/fam333.jpg"
+            },
+            {
+                "txt": "瓯子撇",
+                "img": "images/fam444.jpg"
+            },
+            {
+                "txt": "靠洛夫",
+                "img": "images/fam555.jpg"
+            },
+            {
+                "txt": "波高",
+                "img": "images/fam666.jpg"
+            }
+        ]
     }
 }

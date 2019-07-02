@@ -55,6 +55,8 @@ Buy.prototype = {
         for (var key in data) {
             if (key == "01") {
                 var str = '';
+                var str1 = '';
+                // 轮播
                 for (var i = 0, k = data[key].list.length; i < k; i++) {
                     str += `
                         <li class= "${key}">
@@ -74,13 +76,10 @@ Buy.prototype = {
                         </li>
                     `
                 }
-            }
-
-            if (key == "03") {
-                var str1 = '';
-                for (var j = 0, x = data[key].length; j < x; j++) {
+                //右边淡入淡出
+                for (var j = 0, x = data[key].img.length; j < x; j++) {
                     str1 += `
-                        <img src="${data[key][j]}" alt="">
+                      <a href="##"><img src="${data[key].img[j]}" alt=""></a>
                     `
                 }
             }

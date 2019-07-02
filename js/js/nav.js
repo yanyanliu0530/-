@@ -10,6 +10,9 @@ function Index() {
     this.Input = document.querySelector('.Input')
     this.findIn = document.querySelector('.findL input');
     this.login = document.querySelector('.logReg .login');
+
+    //楼梯
+    this.fix = document.querySelectorAll('.fixMain span');
     this.init()
 }
 Index.prototype = {
@@ -19,7 +22,22 @@ Index.prototype = {
         this.out()
         this.find()
         this.blur();
-        this.cook()
+        this.cook();
+        this.celi();
+        this.foot()
+    },
+
+    //楼梯
+    foot: function () {
+        for (let i = 0, k = this.fix.length; i < k; i++){
+            this.fix[i].onmouseenter = function () {
+                this.firstElementChild.nextElementSibling.style.display = 'block';
+                this.firstElementChild.nextElementSibling.style.cssText = "display:block; opacity: 1;"
+            }
+            this.fix[i].onmouseleave = function () {
+                this.firstElementChild.nextElementSibling.style.cssText= 'display:none;opacity: 0;'
+            }
+        }
     },
     // adv
     click: function () {
@@ -64,6 +82,23 @@ Index.prototype = {
         var get = getcookie('name')
         if (get) {
             this.login.innerHTML = '你好！' + get;
+        }
+    },
+    // 吸顶
+    celi: function () {
+        this.produ = document.querySelector('.produ');
+        this.menu = document.querySelector('.menu');
+        _this = this;
+        window.onscroll = function () {
+            var scroll = document.body.scrollTop || document.documentElement.scrollTop;
+            if (scroll >= 203) {
+                _this.produ.style.cssText = "position:fixed;top:0;"
+
+            }
+            if (scroll <= 0) {
+                _this.produ.style.cssText = "position:static;";
+                _this.menu.style.top = '47px'
+            }
         }
     }
 

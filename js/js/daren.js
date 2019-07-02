@@ -1,7 +1,10 @@
 function Daren() {
-    this.Ul = document.querySelector('.txt_D .tabUl');
-    this.fenye = document.querySelector('.perMain .fenye_D .fenyy')
-    this.famous = document.querySelector('.famous .tab_D');
+    this.Ul = $('.tabUl');
+
+    this.fenyeA = $('.fenyeA');
+    this.fenCon = $('.fenCon');
+    this.fenye = $('.fenyy')
+    // this.count = 0;
     this.init()
 
 }
@@ -24,96 +27,83 @@ Daren.prototype = {
     show: function (data) {
         var str = '';
         for (key in data) {
-            // 拼接选项卡
-            for (var i = 0, k = data[key].name.length; i < k; i++) {
-                str += `
-             <li>${data[key].name[i]}</li>
+            str += `
+            <li>${data[key].name}</li>
             `
-            }
-            var str1 = ''
-            // for (var i = 0, k = data[key].list[0]; i < k; i++) {
-            str1 += `
-                        <a href="html/list.html?name=${key}&pid=${i}" class="fenyeA" data-id=${key}>
-                        <img src="${data[key].list[0].img}" alt="">
-
-                        <div class="fenTxt">
-                            <p class="p_1">${data[key].list[0].txt}</p>
-                            <p class="p_2">${data[key].list[0].text}</p>
-                        </div>
-                    </a>
-                    <div class="fenCon" data-id=${key}>
-                        <a href="html/list.html?name=${key}&pid=${i}" class="fen1">
-                            <img src="${data[key].list[0].img1}" alt="">
-                        </a>
-                        <a href="html/list.html?name=${key}&pid=${i}">
-                            <img src="${data[key].list[0].img2}" alt="">
-                        </a>
-                    </div>
-                    <div class="fenCon fenR" data-id=${key}>
-                        <a href="html/list.html?name=${key}&pid=${i}" class="fen1">
-                            <img src="${data[key].list[0].img3}" alt="">
-                        </a>
-                        <a href="html/list.html?name=${key}&pid=${i}">
-                            <img src="${data[key].list[0].img4}" alt="">
-                        </a>
-                    </div>
-                        `
-            this.fenye.innerHTML = str1;
-            // }
         }
-
-        this.Ul.innerHTML = str;
-        this.tabLi = $('.tabUl li')
-
-        this.tabLi[0].className = 'daLi';
-        this.ospan(data);
+        this.Ul.html(str);
+        this.over(data)
+    },
+    over: function (data) {
+        var _this = this;
+        //第一个添加样式
+        $('.tabUl li').eq(0).addClass('daLi');
+        var _this = this;
+        $('.tabUl li').mouseover(function () {
+            $(this).addClass('daLi').siblings().removeClass('daLi');
+            _this.shuju(data, $(this).html());
+        })
+        this.click(data);
 
     },
+    shuju: function (data, txt) {
+        for (key in data) {
+            var str1 = ''
+            var str2 = ''
 
-    //
-    ospan: function (data) {
-        var _this = this
-        this.tabLi.mouseover(function () {
-            $(this).addClass('daLi').siblings().removeClass('daLi')
-            for (key in data) {
-                var str = ''
-                for (var i = 0, k = data[key].list.length; i < k; i++) {
-                    if ($(this).index() == i) {
-                        str += `
-                        <a href="##" class="fenyeA" data-id=${key}>
-                        <img src="${data[key].list[i].img}" alt="">
+            if (data[key].name == txt) {
+                str1 += `
+                        <img src="${data[key].img}" alt="">
 
                         <div class="fenTxt">
-                            <p class="p_1">${data[key].list[i].txt}</p>
-                            <p class="p_2">${data[key].list[i].text}</p>
-                        </div>
-                    </a>
-                    <div class="fenCon" data-id=${key}>
-                        <a href="##" class="fen1">
-                            <img src="${data[key].list[i].img1}" alt="">
+                            <p class="p_1">${data[key].txt1}</p>
+                            <p class="p_2">${data[key].txt2}</p>
+                        </div> 
+                    `
+                for (let i = 0, k = data[key].list.length; i < k; i++) {
+                    str2 += `
+                        <a href="html/list.html?name=${key}&pid=${i}">
+                            <img src="${data[key].list[i].img}" alt="">
                         </a>
-                        <a href="##">
-                            <img src="${data[key].list[i].img2}" alt="">
-                        </a>
-                    </div>
-                    <div class="fenCon fenR" data-id=${key}>
-                        <a href="##" class="fen1">
-                            <img src="${data[key].list[i].img3}" alt="">
-                        </a>
-                        <a href="##">
-                            <img src="${data[key].list[i].img4}" alt="">
-                        </a>
-                    </div>
                         `
-                    }
-
                 }
-                _this.fenye.innerHTML = str;
+                this.fenCon.html(str2)
+                this.fenyeA.html(str1)
             }
-
-
+        }
+    },
+    //  点击
+    click: function (data) {
+        var _this = this;
+        var count = 0;
+        this.size = $('.tabUl li').length - 1;
+        $('.fenye_D span').click(function () {
+            if ($(this).index() == 2) {
+                if (count >= _this.size) {
+                    count = 0;
+                } else {
+                    count++;
+                }
+                _this.dist(data, count);
+            }
+            if ($(this).index() == 1) {
+                if (count <= 0) {
+                    count = _this.size;
+                } else {
+                    count--;
+                }
+                _this.dist(data, count);
+            }
         })
 
+    },
+    //遍历列表
+    dist: function (data, count) {
+        for (let i = 0, k = $('.tabUl li').length; i < k; i++) {
+            var str4 = $('.tabUl li').eq(count).html();
+            $('.tabUl li').eq(count).addClass('daLi').siblings().removeClass('daLi')
+            this.shuju(data, str4);
+        }
     }
 
 

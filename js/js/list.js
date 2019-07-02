@@ -181,16 +181,51 @@ List.prototype = {
     submit: function () {
         for (let i = 0, k = this.cart.length; i < k; i++) {
             var _this = this;
+
             this.cart[i].onclick = function () {
-                setcookie('名字', _this.head.innerHTML);
-                setcookie('价格', _this.pri.innerHTML);
-                setcookie('地址', _this.style.src);
-                setcookie('款式', _this.sTxt.innerHTML);
-                setcookie('数量', _this.input.value);
+                //存放多个数据
+                var arr1 = [];
+                var projson = {};
+                var flag = true;
+                projson = {
+                    "name": _this.head.innerHTML,
+                    "pri": _this.pri.innerHTML,
+                    "src": _this.style.src,
+                    "txt": _this.sTxt.innerHTML,
+                    "num": _this.input.value
+                }
+                // 定义一个字符串取出本地存储
+                var str2 = localStorage.getItem('goods');
+                if (str2 != null) {
+                    //说明有数据，有数据
+                    arr1 = JSON.parse(str2);
+                    //要看数据中是否存在现在添加的
+                    arr1.forEach((pro) => {
+                        console.log(pro.name)
+                        if (pro.name == projson.name) {
+                            console.log(111)
+                            pro.num = parseInt(pro.num) + parseInt(projson.num)
+                            flag = false;
+                            return;
+                        }
+                    })
+                }
+                if (flag) {
+                    arr1.push(projson);
+                }
+                localStorage.setItem('goods', JSON.stringify(arr1));
 
                 if (confirm("是否跳转购物车")) {
                     location.href = 'shop.html'
                 }
+
+
+
+
+
+
+
+
             }
         }
     }

@@ -18,8 +18,8 @@ body{
     font-size: 12px;
 }
 //中心版区
-.advMain,.navMian,.headMain,.imgMain,.listMain,.infoMain,.distMain{
-   width: 1202px;
+.advMain,.navMian,.headMain,.goodMain{
+   width: 990px;
     margin: 0 auto;
 }
 .adv{
@@ -304,6 +304,300 @@ body{
                 width: 100%;
                 height: 100%;
             }
+        }
+    }
+}
+// goods
+.goods{
+    .goodMain{
+        padding-top:21px;
+        .text{
+          line-height: 40px;
+            font-weight: 700;
+           span{
+               font-weight: 700;
+               font-size: 14px;
+               line-height: 40px;
+               display: initial;
+               &::before{
+                   content: ('(')
+               }
+               &:after{
+                    content: (')')
+               }
+           }
+        } 
+        .nav{
+            height: 34px;
+            background: #f5f5f5;
+        }
+          .check{
+                width: 44PX;
+                height: 34PX;
+                float: left;
+                span{
+                width: 12px;
+                height: 12px;
+                background: url(../images/a.png)no-repeat;
+                background-position:-576px -255px; 
+                cursor: pointer;
+                margin-left:16px;
+                margin-top:12px; 
+                
+            }
+            } 
+            .check1{
+                height: 44px;
+                span{
+                    margin-top: 16px;
+                }
+            }
+           .check2{
+               height: 120px;
+            span{
+                margin-top: 54px;
+            }
+           }
+            .txt{
+                width: 90px;
+                line-height: 34px;
+                float: left;
+                text-indent: 12px;
+                margin-right:26px; 
+            } 
+             .txt1{
+                line-height: 44px;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                width: auto;
+            }
+            .info{
+                float: left;
+                width: 90px;
+                line-height: 34px;
+
+            }
+            .list{
+                float: right;
+                width: 576px;
+                li{
+                    line-height: 34px;
+                    float: left;
+                    width: 120px;
+                    margin-left: 24px;
+                    text-align: center;
+                   
+                }
+             
+                
+            }
+        .listImg{
+            width:988px;
+            height: 165px;
+            border: 1px solid #ddd;
+            margin-top: 20px;
+            .listTop{
+                height: 44px;
+                background: #f5f5f5;
+                border-bottom:1px solid #ddd; 
+            }
+            .listBot{
+                height: 120px;
+                .IMG{
+                    width: 50px;
+                    height: 50px;
+                    float: left;
+                    padding:35px 33px; 
+                    img{
+                        width: 50px;
+                        height: 50px;
+                    }
+                }
+                .style{
+                    float: left;
+                    width: 240px;
+                    height:99px;
+                    padding-top:21px;
+                    .text1{
+                        line-height: 20px;
+                        color: #666;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                    } 
+                    .text2{
+                        line-height: 19px;
+                        font-size: 11px;
+                        color: #999;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                    }
+                }
+                   .list1{
+                       .pri{
+                           &::before{
+                               content: ('￥')
+                           }
+                       }
+                    li{
+                        line-height: 59px;
+                        
+                    }
+                     .Li1{
+                        width: 76px;
+                        height: 18px;
+                        border: 1px solid #ddd;
+                        margin-top: 21px;
+                        span{
+                            float: left;
+                            width: 16px;
+                            height: 18px;
+                            line-height: 18px;
+                            color: #333;
+                            cursor: pointer;
+                        }
+                        .R{
+                            border-right: 1px solid #ddd;
+                        }
+                         .L{
+                            border-right: 1px solid #ddd;
+                        }
+                        input{
+                            width: 42px;
+                            height: 18px;
+                            border: none;
+                            float: left;
+                            text-align: center;
+                            line-height: 18px;
+                        }
+                    }
+                    .pr_li{ 
+                        text-align: right;
+                        &::before{
+                            content: ('￥');
+                        }
+                    }
+                    .shezhi{
+                        text-align: right;
+                     .del_li{
+                        margin-top:21px; 
+                        color: #999;
+                        line-height: 21px;
+                        font-size: 11px;
+                        cursor: pointer;
+                    }
+                    .hodd_li{
+                        color: #999;
+                        line-height: 11px;
+                        font-size: 11px;
+                        margin-top:5px; 
+                         cursor: pointer;
+                    }
+                    }
+                   
+                }
+            }
+        }
+        .bottom{
+            margin-top: 40px;
+            height: 60px;
+            background: #f2f2f2;
+            .check3{
+                height: 36px;
+                padding-top:24px;
+                float: left; 
+                span{
+                    margin-top:0 
+                }
+            }
+           .ul_li{
+               float: left;
+               li{
+                    padding-right:13px;
+                    line-height: 60px;
+                    float: left;
+                    color: #666;
+               }
+              
+           }
+           .ul_bot{
+               height: 60px;
+                  float: right;
+                 width: 576px;
+                 li{
+                     float: left;
+                 }
+               .num_li{
+                    height: 60px;
+                     float: left;
+                     width: 120px;
+                    margin-left: 24px;
+                    span{
+                        line-height: 60px;
+                        color: #666;
+                        float: left;
+                    }
+                    i{
+                        line-height: 60px;
+                        color: #cc5252;
+                        float: left;
+                        font-style: normal;
+                    }
+               }
+              .pri_li{
+                  padding: 0 28px;
+                  height: 60px;
+                  h2{
+                      overflow: hidden;
+                       padding: 14px 28px 0 28px;
+                      span{
+                           line-height: 21px;
+                            color: #666;
+                            font-size: 12px;
+                            float: left;
+                            
+                      }
+                      i{
+                          color: #ae0f17;
+                          font-weight: 700;
+                          font-style: normal;
+                          float: left;
+                          &::before{
+                              content: ('￥')
+                          }
+                      }
+                  }
+                  h3{
+                      overflow: hidden;
+                     padding: 0 28px 0 28px;
+                      span{
+                            line-height: 21px;
+                            color: #666;
+                            font-size: 12px;
+                            float: left;
+                            
+                      }
+                      i{
+                           color: #666;
+                          font-style: normal;
+                          float: left;
+                          &::before{
+                              content: ('￥')
+                        }}
+                  }
+              }
+              .count{
+                  width: 180px;
+                  background: #cc5252;
+                  text-align: center;
+                  line-height: 60px;
+                  color: #fff;
+                  float: right;
+                  font-weight: 700;
+              } 
+           }
         }
     }
 }

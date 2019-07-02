@@ -9,7 +9,6 @@ function Play() {
 Play.prototype = {
     init: function () {
         this.data();
-        // this.date1()
     },
     //拼接数据
     data: function () {

@@ -17,6 +17,162 @@ span {
   margin: 0 auto;
 }
 
+.rigFix {
+  width: 44px;
+  height: 100%;
+  background: pink;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 20;
+}
+
+.rigFix .fixMain {
+  width: 100%;
+  position: absolute;
+  bottom: 55px;
+  right: 0;
+  background: #fff;
+}
+
+.rigFix .fixMain span {
+  width: 44px;
+  height: 44px;
+  background: palegreen;
+  position: relative;
+}
+
+.rigFix .fixMain span:hover {
+  background: #f1f1f1;
+}
+
+.rigFix .fixMain span .app {
+  width: 180px;
+  background: #f1f1f1;
+  padding: 18px 10px 15px 10px;
+  bottom: -44px;
+  height: auto;
+  position: absolute;
+  right: 44px;
+  height: 200px;
+  cursor: pointer;
+  display: none;
+}
+
+.rigFix .fixMain span .app img {
+  margin: 0 auto;
+  width: 159px;
+  height: 159px;
+}
+
+.rigFix .fixMain span .app p {
+  color: #333;
+  margin-top: 10px;
+  line-height: 18px;
+  text-align: center;
+}
+
+.rigFix .fixMain span i {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.rigFix .fixMain span em {
+  position: absolute;
+  width: 76px;
+  height: 44px;
+  line-height: 44px;
+  color: #333;
+  font-size: 12px;
+  background: #f1f1f1;
+  text-align: right;
+  right: 44px;
+  font-style: normal;
+  bottom: 0;
+  display: none;
+  opacity: 0;
+}
+
+.rigFix .fixMain span .car1 {
+  background-image: url(../images/a.png);
+}
+
+.rigFix .fixMain span .car-1 {
+  background-position: -507px -382px;
+}
+
+.rigFix .fixMain span .car-2 {
+  background-position: -507px -246px;
+}
+
+.rigFix .fixMain span .car-3 {
+  background-position: -469px -360px;
+}
+
+.rigFix .fixMain span .car-4 {
+  background-position: -373px -462px;
+}
+
+.rigFix .fixMain span .car-5 {
+  background-position: -507px -178px;
+}
+
+.slide {
+  position: fixed;
+  right: 300px;
+  width: 260px;
+  height: 100%;
+  background: #f1f1f1;
+  border-left: 2px solid #333;
+  z-index: 99;
+}
+
+.slide .slide-top {
+  height: 48px;
+  line-height: 48px;
+  background: #fff;
+  padding: 0 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.slide .slide-top p {
+  font-size: 14px;
+  color: #333;
+  float: left;
+  font-weight: 700;
+}
+
+.slide .slide-top i {
+  background-image: url("../images/a.png");
+  background-position: -97px -504px;
+  width: 17px;
+  height: 16px;
+  cursor: pointer;
+  margin-top: 14px;
+  float: right;
+}
+
+.slide p {
+  height: 32px;
+  line-height: 32px;
+  padding: 0 12px;
+  background: #fff9ce;
+  color: #666;
+}
+
+.slide p span {
+  float: left;
+}
+
+.slide p a {
+  color: #477db3;
+  line-height: 32px;
+  float: right;
+}
+
 .adv {
   background: #c40000;
   width: 100%;
@@ -343,6 +499,13 @@ span {
   height: 100%;
 }
 
+.produ {
+  height: 47px;
+  background: #fff;
+  width: 100%;
+  z-index: 20;
+}
+
 .produ .proMain {
   height: 47px;
 }
@@ -605,6 +768,10 @@ span {
 
 .produ .proMain .proC li a:hover {
   border-bottom: 3px solid #cc5252;
+}
+
+.banner {
+  overflow: hidden;
 }
 
 .banner .banMain {
@@ -1002,14 +1169,14 @@ span {
   background-position: -116px -374px;
 }
 
-.buy .buyMain .buyB .right_B a {
+.buy .buyMain .buyB .right_B .fade {
   width: 142px;
   height: 205px;
   margin: 24px auto 0;
   position: relative;
 }
 
-.buy .buyMain .buyB .right_B a img {
+.buy .buyMain .buyB .right_B .fade img {
   width: 100%;
   position: absolute;
   top: 0;
@@ -1220,9 +1387,9 @@ span {
 }
 
 .txt_D .tab_D {
-  width: 320px;
   float: left;
   height: 60px;
+  overflow: hidden;
 }
 
 .txt_D .tab_D li {
@@ -1307,6 +1474,7 @@ span {
   height: 60px;
   top: 50%;
   margin-top: -30px;
+  cursor: pointer;
 }
 
 .fenye_D .fenBnt1 {
@@ -1320,7 +1488,7 @@ span {
 
 .fenye_D .fenBnt2 {
   background-position: -302px -184px;
-  right: 0;
+  right: 2px;
 }
 
 .fenye_D .fenBnt2:hover {
@@ -1328,27 +1496,24 @@ span {
 }
 
 .fenye_D .fenCon {
-  width: 392px;
+  width: 796px;
   height: 360px;
   float: left;
-  margin-right: 14px;
+}
+
+.fenye_D .fenCon a {
+  width: 392px;
+  height: 174px;
+  float: left;
+  margin-bottom: 12px;
 }
 
 .fenye_D .fenCon a:hover {
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.15);
 }
 
-.fenye_D .fenCon .AA {
-  width: 100%;
-  height: 174px;
-}
-
-.fenye_D .fenCon .AA:hover {
-  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.15);
-}
-
-.fenye_D .fenCon .fen1 {
-  margin-bottom: 12px;
+.fenye_D .fenCon a:nth-child(odd) {
+  margin-right: 12px;
 }
 
 .fenye_D .fenR {
