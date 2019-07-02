@@ -44,10 +44,10 @@ Shop.prototype = {
                         </div>
                         <ul class="list list1">
                             <li class="pri">${pro.pri}</li>
-                            <li class="Li1">
-                                <span class="L">-</span>
-                                <input type="text" value="${pro.num}">
-                                <span class="R">+</span>
+                            <li class="Li1" data-id="${pro.name}">
+                                <span class="L" data-number='-1'>-</span>
+                                <input type="text" value="${pro.num}" class="inpu">
+                                <span class="R" data-number='1'>+</span>
                             </li>
                             <li class="pr_li">${pro.num * pro.pri}</li>
                             <li class="shezhi">
@@ -72,30 +72,30 @@ Shop.prototype = {
                     if (i == 0 || i == size - 1) {
                         for (let j = 0; j < size; j++) {
                             _this.check[j].firstElementChild.style.cssText = "background-position:-576px -233px;";
+                            _this.check[j].firstElementChild.className = 'checked';
                             _this.flag = true;
-
                         }
-
-
                     }
                     else {
                         this.firstElementChild.style.cssText = "background-position:-576px -233px;";
+                        this.firstElementChild.className = 'checked';
                         _this.flag = true;
                     }
-
                 }
                 else {
                     if (i == 0 || i == size - 1) {
                         for (let m = 0; m < size; m++) {
                             _this.check[m].firstElementChild.style.cssText = "background-position:-576px -255px;";
+                            _this.check[m].firstElementChild.className = ''
                             _this.flag = false;
                         }
                     } else {
                         this.firstElementChild.style.cssText = "background-position:-576px -255px;";
+                        this.firstElementChild.className = ''
                         _this.flag = false;
                     }
-
                 }
+                _this.ck()
             }
         }
 
@@ -104,7 +104,8 @@ Shop.prototype = {
         this.del();
         //加减
         this.ospan = document.querySelectorAll('.Li1 span')
-        // this.sum()
+        this.sum();
+
     },
     del: function () {
         var _this = this;
@@ -117,22 +118,63 @@ Shop.prototype = {
                         console.log(name == pro.name)
                         _this.arr1.splice(index, 1);
                         localStorage.setItem('goods', JSON.stringify(_this.arr1))
+                        _this.ck()
                     }
                 })
             }
         }
     },
     sum: function () {
-        for (let x = 0, y = this.ospan.length; x < y; x++) {
-            this.ospan[x].onclick = function () {
-                //获取自定义属性
-                var numb = this.getAttribute('data-number');
+        _this = this;
+        for (let i = 0; i < this.ospan.length; i++) {
+            this.ospan[i].onclick = function () {
+                var numb = parseInt(this.getAttribute('data-number'));
+                var name = this.parentNode.getAttribute('data-id');
+                var summ = this.parentNode.previousElementSibling;
                 //input
-                var oinput = this.parentNode.firstElementChild.previousElementSibling
-                console.log(numb, ',' + oinput)
+                var oinput = this.parentNode.firstElementChild.nextElementSibling;
+               var zonge= this.parentNode.nextElementSibling
+                var oin= this.parentNode.firstElementChild.nextElementSibling.value;
+                if (numb == -1 && oinput.value == 1) {
+                    return;
+                }
+                _this.arr1.forEach(function (pro) {
+                    if (pro.name == name) {
+                        var count = parseInt(pro.num);
+                        count += numb;
+                        pro.num = count
+                        //页面变化
+                        oinput.value = pro.num;
+                        //价格
+                        zonge.innerHTML = oinput.value * summ.innerHTML;
+                        _this.ck()
+                        localStorage.setItem('goods', JSON.stringify(_this.arr1));
+                    }
+                })
             }
         }
-
+    },
+    //结算
+    ck: function () {
+        var count = 0;
+        var money = 0;
+        var check1 = document.querySelectorAll('.listTop .check1 .checked');
+        var check2 = document.querySelectorAll(' .check2 .checked');
+        var jian = document.querySelector('.ul_bot .num_li i');
+        var zong = document.querySelectorAll('.pri_li i');
+       
+        var value = 0;
+        for (let i = 0; i < check2.length; i++) {
+            value = Number(check2[i].parentNode.nextElementSibling.nextElementSibling.nextElementSibling.firstElementChild.nextElementSibling.firstElementChild.nextElementSibling.value)
+            count += value;
+            mon =Number (check2[i].parentNode.nextElementSibling.nextElementSibling.nextElementSibling.firstElementChild.nextElementSibling.nextElementSibling.innerHTML)
+           money += mon
+        }
+        jian.innerHTML = count;
+        for (let j = 0; j < zong.length; j++){
+             zong[j].innerHTML = money
+        }
+       
     }
 }
 new Shop()

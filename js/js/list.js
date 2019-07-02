@@ -74,12 +74,13 @@ List.prototype = {
     },
     play: function (data, t, l) {
         var odata = data[t].list[l].img1;
+        var id = data[t].list[l].id
         this.Img.src = odata[0];
         this.filter.src = data[t].list[l].img2[0]
         var str = ""
         for (kay in odata) {
             str += `
-                <li>
+                <li data-id="${id}">
                     <img src="${odata[kay]}" alt="">
                 </li>
                   `
@@ -95,7 +96,9 @@ List.prototype = {
         this.head.innerHTML = data[t].list[l].txt;
         //    款式
         this.style.src = data[t].list[l].style[0];
-        this.sTxt.innerHTML = data[t].list[l].style[1]
+        this.sTxt.innerHTML = data[t].list[l].style[1];
+       
+       
     },
 
     mover: function () {
@@ -183,6 +186,7 @@ List.prototype = {
             var _this = this;
 
             this.cart[i].onclick = function () {
+               
                 //存放多个数据
                 var arr1 = [];
                 var projson = {};
@@ -203,7 +207,6 @@ List.prototype = {
                     arr1.forEach((pro) => {
                         console.log(pro.name)
                         if (pro.name == projson.name) {
-                            console.log(111)
                             pro.num = parseInt(pro.num) + parseInt(projson.num)
                             flag = false;
                             return;
@@ -218,14 +221,6 @@ List.prototype = {
                 if (confirm("是否跳转购物车")) {
                     location.href = 'shop.html'
                 }
-
-
-
-
-
-
-
-
             }
         }
     }

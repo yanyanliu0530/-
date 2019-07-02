@@ -111,12 +111,13 @@ $font12:12px;
 }
 .slide{
     position: fixed;
-    right: 300px;
+    right: -262px;
     width: 260px;
     height: 100%;
     background: #f1f1f1;
     border-left: 2px solid #333;
     z-index: 99;
+    font-size: 12px;
     .slide-top{
     height: 48px;
     line-height: 48px;
@@ -128,6 +129,7 @@ $font12:12px;
     color: #333;
     float: left;
     font-weight: 700;
+    
     }
     i{
         background-image:url('../images/a.png') ;
@@ -137,6 +139,7 @@ $font12:12px;
         cursor: pointer;
         margin-top: 14px;
         float: right;
+        
     }
     }
     p{
@@ -147,11 +150,51 @@ $font12:12px;
     color: #666;
     span{
         float: left;
+         font-size: 12px;
     }
     a{
     color: #477db3;
     line-height: 32px;
     float: right;
+     font-size: 12px;
+    }
+    }
+    .cart_empty{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #666;
+    i{
+        display: block;
+        margin: 0 auto 23px;
+        background-image: url(../images/a.png);
+    background-position: 0 -296px;
+    background-size: 589px;
+    width: 55px;
+    height: 51px;
+    }
+    span{
+            text-align: center;
+    color: #666;
+    font-size: 12px;
+    }
+    }
+    .love_top{
+    position: relative;
+    padding: 0 12px;
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+    ul{
+        width: 100%;
+        display: flex;
+        li{
+            height: 48px;
+            line-height: 48px;
+            margin-right: 20px;
+            text-align: center;
+        }
     }
     }
 }
@@ -579,6 +622,7 @@ $font12:12px;
                                                     img{
                                                         width: auto;
                                                         height: 100%;
+                                                        margin-left:20px; 
                                                     }
                                                }
                                               .pText{

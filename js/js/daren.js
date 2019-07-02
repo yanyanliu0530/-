@@ -53,16 +53,17 @@ Daren.prototype = {
 
             if (data[key].name == txt) {
                 str1 += `
+                        <a href="html/list.html?name=${key}&pid=0">
                         <img src="${data[key].img}" alt="">
-
                         <div class="fenTxt">
                             <p class="p_1">${data[key].txt1}</p>
                             <p class="p_2">${data[key].txt2}</p>
                         </div> 
+                        </a>
                     `
                 for (let i = 0, k = data[key].list.length; i < k; i++) {
                     str2 += `
-                        <a href="html/list.html?name=${key}&pid=${i}">
+                        <a href="html/list.html?name=${key}&pid=${i+1}">
                             <img src="${data[key].list[i].img}" alt="">
                         </a>
                         `

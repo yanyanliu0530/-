@@ -122,12 +122,13 @@ span {
 
 .slide {
   position: fixed;
-  right: 300px;
+  right: -262px;
   width: 260px;
   height: 100%;
   background: #f1f1f1;
   border-left: 2px solid #333;
   z-index: 99;
+  font-size: 12px;
 }
 
 .slide .slide-top {
@@ -165,12 +166,58 @@ span {
 
 .slide p span {
   float: left;
+  font-size: 12px;
 }
 
 .slide p a {
   color: #477db3;
   line-height: 32px;
   float: right;
+  font-size: 12px;
+}
+
+.slide .cart_empty {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: #666;
+}
+
+.slide .cart_empty i {
+  display: block;
+  margin: 0 auto 23px;
+  background-image: url(../images/a.png);
+  background-position: 0 -296px;
+  background-size: 589px;
+  width: 55px;
+  height: 51px;
+}
+
+.slide .cart_empty span {
+  text-align: center;
+  color: #666;
+  font-size: 12px;
+}
+
+.slide .love_top {
+  position: relative;
+  padding: 0 12px;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+.slide .love_top ul {
+  width: 100%;
+  display: flex;
+}
+
+.slide .love_top ul li {
+  height: 48px;
+  line-height: 48px;
+  margin-right: 20px;
+  text-align: center;
 }
 
 .adv {
@@ -667,6 +714,7 @@ span {
 .produ .proMain .proL .menu .menuF dl .menuR .menuC .menu_1 .menu_2 ul li a .pImg img {
   width: auto;
   height: 100%;
+  margin-left: 20px;
 }
 
 .produ .proMain .proL .menu .menuF dl .menuR .menuC .menu_1 .menu_2 ul li a .pText {

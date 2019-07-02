@@ -23,7 +23,7 @@ Index.prototype = {
         this.find()
         this.blur();
         this.cook();
-        this.celi();
+        // this.celi();
         this.foot()
     },
 
