@@ -13,6 +13,7 @@ function Index() {
 
     //楼梯
     this.fix = document.querySelectorAll('.fixMain span');
+    this.pro_none = document.querySelector('#pro_none')
     this.init()
 }
 Index.prototype = {
@@ -23,19 +24,19 @@ Index.prototype = {
         this.find()
         this.blur();
         this.cook();
-        // this.celi();
+        this.celi();
         this.foot()
     },
 
     //楼梯
     foot: function () {
-        for (let i = 0, k = this.fix.length; i < k; i++){
+        for (let i = 0, k = this.fix.length; i < k; i++) {
             this.fix[i].onmouseenter = function () {
                 this.firstElementChild.nextElementSibling.style.display = 'block';
                 this.firstElementChild.nextElementSibling.style.cssText = "display:block; opacity: 1;"
             }
             this.fix[i].onmouseleave = function () {
-                this.firstElementChild.nextElementSibling.style.cssText= 'display:none;opacity: 0;'
+                this.firstElementChild.nextElementSibling.style.cssText = 'display:none;opacity: 0;'
             }
         }
     },
@@ -92,12 +93,10 @@ Index.prototype = {
         window.onscroll = function () {
             var scroll = document.body.scrollTop || document.documentElement.scrollTop;
             if (scroll >= 203) {
-                _this.produ.style.cssText = "position:fixed;top:0;"
-
+                _this.pro_none.style.cssText = "display:block;position:fixed;top:0;";
             }
             if (scroll <= 0) {
-                _this.produ.style.cssText = "position:static;";
-                _this.menu.style.top = '47px'
+                _this.pro_none.style.cssText = "display:none";
             }
         }
     }

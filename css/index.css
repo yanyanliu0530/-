@@ -546,6 +546,10 @@ span {
   height: 100%;
 }
 
+#pro_none {
+  display: none;
+}
+
 .produ {
   height: 47px;
   background: #fff;
@@ -576,6 +580,17 @@ span {
   color: #fff;
   line-height: 47px;
   float: left;
+}
+
+.produ .proMain .proL .pro .pro_Span {
+  width: 51px;
+  height: 21px;
+  margin-top: 15px;
+}
+
+.produ .proMain .proL .pro .pro_Span img {
+  width: 100%;
+  height: 100%;
 }
 
 .produ .proMain .proL .pro i {
@@ -909,6 +924,7 @@ span {
 
 .list1 {
   padding-top: 11px;
+  background-color: #f5f5f5;
 }
 
 .list1 .listMain {
@@ -939,6 +955,7 @@ span {
 
 .buy {
   padding-bottom: 32px;
+  background-color: #f5f5f5;
 }
 
 .buy .buyMain {
@@ -1118,6 +1135,7 @@ span {
   width: 190px;
   height: 280px;
   float: left;
+  background: #fff;
 }
 
 .buy .buyMain .buyB .play_B .playSide ul li a {
@@ -1189,6 +1207,7 @@ span {
   height: 280px;
   float: right;
   position: relative;
+  background: #fff;
 }
 
 .buy .buyMain .buyB .right_B span {
@@ -1309,6 +1328,7 @@ span {
 }
 
 .person {
+  background-color: #f5f5f5;
   padding-bottom: 32px;
 }
 
